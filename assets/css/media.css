@@ -1,0 +1,36 @@
+@media (max-width:767px) {
+    .link-birthcontrol {
+        margin-top: 130px;
+    }
+    .title-head {
+        text-align: left !important;
+        font-size: 23px;
+        margin-top: 50px  !important;
+    }
+    .sec-content {
+        padding:0px 30px;
+        font-size: 16.5px;
+    }
+    .user-profile {
+        margin-bottom: 16.5px;
+    }
+    .date-content {
+        margin-top: 0;
+        text-align: left;
+    }
+    .big-image {
+        margin-top: 50px;
+    }
+    .title-cta {
+        font-size: 26px;
+    }
+    .sub-title-cta {
+        font-size: 15.5px;
+    }
+    .ct-cta {
+        padding: 0px 30px;
+    }
+    .footer {
+        padding:45px 15px;
+    }
+}
