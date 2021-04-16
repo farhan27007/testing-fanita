@@ -181,7 +181,7 @@
 .cta-section {
     margin-top: 45px;
     padding: 20px 0px;
-    background-color:rgba(245, 223, 221, 0.5);
+    background-color:#FDF0F2;
 }
 .title-cta {
     font-family: 'mont';
@@ -199,7 +199,7 @@
   padding: 30px 20px;
   outline: none;
   box-shadow: none;
-  background: #ECFAFC;
+  background: #fff !important;
   border: 0px solid;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -211,13 +211,13 @@
   font-style: italic;
 }
 .btn-form-cta , .btn-form-cta:focus, .btn-form-cta:active {
-  background: #DAF4F8;
+  background: #B4EBE8;
   font-family: mont;
   font-weight: bold;
   outline: none;
   box-shadow: none;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -256,11 +256,11 @@
     line-height: 1.5;
 }
 .button-article {
-  background: #ECC4C2;
+  background: #F8B7BF;
   font-family: 'mont';
   font-weight: bold;
   letter-spacing: 0.4px;
-  padding: 13px;
+  padding: 18px;
   font-size: 17px;
   border-radius: 10px;
 }
