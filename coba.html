@@ -10,19 +10,17 @@
 </head>
 <body class="set-body-email-template">
   <div role="article" aria-roledescription="email" lang="en" class="sub-set-body-email-template">
-    <br>
-    <br>
-    <table role="presentation" class="table-email-template">
+    <table role="presentation" class="table-email-template mt-35 no-mt-xs">
       <tr>
         <td align="center">
-          <table role="presentation" style="width:94%;max-width:600px;border:none;border-spacing:0;text-align:left;font-family:Arial,sans-serif;font-size:16px;line-height:22px;color:#363636;">
+          <table role="presentation" class="body-template-email">
            
             <tr>
               <td class="section-head-email-template">
                 <p align="center">
-                  <img src="https://getfanita.com/wp-content/uploads/2021/03/FanitaNewLogo-100x40.png" height="58" alt="">
+                  <img src="assets/img/fanita-logo-svg.svg" height="58" alt="">
                 </p>
-                <div class="" style="display: flex;justify-content: center;">
+                <div class="display-flex justify-content-center">
                   <p><a href="#" class="menu-email-template">Layanan Kami</a></p>
                   <p><a href="#" class="menu-email-template">Blog</a></p>
                   <p><a href="#" class="menu-email-template">Tentang Fanita</a></p>
@@ -44,7 +42,7 @@
                   We can start shipping your product and forward your prescription once you have 
                   completed the payment as outlined below:
                 </p>
-                <p class="text-center" style="margin-top: 45px;margin-bottom: 40px;">
+                <p class="text-center backup-button-email-template">
                   <a href="#" class="button-email-template">Continue Checkout</a>
                 </p>
               </td>
@@ -52,7 +50,7 @@
             
 
             <tr>
-              <td class="approved-email-template" style="background-color: #F1FCFC;padding:10px 70px;">
+              <td class="approved-email-template backup-payment-title">
                   <h3 align="center" class="title-email-template">PAYMENT INSTRUCTIONS</h3>
 
                   <!-- step payment -->
@@ -69,7 +67,7 @@
                   <div class="display-flex step-payment">
                     <p class="number-step-payment st-2">2</p>
                     <div class="display-block backup-step-payment">
-                      <p class="text-step-payment" style="margin-top: 22px;">Select preferred payment option.<br> We offer a variety of payment<br> options.</p>
+                      <p class="text-step-payment mt-22">Select preferred payment option.We offer a variety of payment options.</p>
                     </div>     
                   </div>
                   <!-- step payment -->
@@ -78,7 +76,7 @@
                   <div class="display-flex step-payment">
                     <p class="number-step-payment">3</p>
                     <div class="display-block backup-step-payment">
-                      <p class="text-step-payment" style="margin-top: 35px;">Complete the payment and <br> receive products.</p>
+                      <p class="text-step-payment mt-35">Complete the payment and receive products.</p>
                     </div>     
                   </div>
                   <!-- step payment -->
@@ -87,30 +85,22 @@
             </tr>
 
             <tr>
-              <td style="padding: 30px;
-              padding-bottom: 109px;
-              text-align: center;
-              font-size: 12px;
-              background-color: #FDE2E5;
-              color: #cccccc;
-              background-image: url(assets/img/bg-footer.svg);
-              background-repeat: no-repeat;
-              background-position: right;">
-                <div class="display-flex" style="justify-content: center;">
-                  <p><a href=""><img src="assets/img/icon/ic-facebook.svg" style="margin:0px 30px" alt=""></a></p>
-                  <p><a href=""><img src="assets/img/icon/ic-instagram.svg" style="margin:0px 30px" alt=""></a></p>
-                  <p><a href=""><img src="assets/img/icon/ic-twitter.svg" style="margin:0px 30px" alt=""></a></p>
+              <td class="section-footer-email-template">
+                <div class="display-flex justify-content-center">
+                  <p><a href=""><img src="assets/img/icon/ic-facebook.svg" class="icon-footer-email-template" alt=""></a></p>
+                  <p><a href=""><img src="assets/img/icon/ic-instagram.svg" class="icon-footer-email-template" alt=""></a></p>
+                  <p><a href=""><img src="assets/img/icon/ic-twitter.svg" class="icon-footer-email-template" alt=""></a></p>
                 </div>
-                <p class="text-center" style="font-size: 15px;color: #999;">This email was sent to dwenda@email.com because you subscribed to us. You can unsubscribe from Fanita emails <a href="">here</a></p>
-                <div class="display-flex" style="justify-content: center;">
+                <p class="text-center footer-text">This email was sent to dwenda@email.com because you subscribed to us. You can unsubscribe from Fanita emails <a href="">here</a></p>
+                <div class="display-flex justify-content-center">
                   <p class="text-footer-email-template"><a href="">Privacy Policy</a></p>
                   <p class="text-footer-email-template"><a href="">Terms & Conditions</a></p>
                   <p class="text-footer-email-template"><a href="">About Us</a></p>
                   <p class="text-footer-email-template"><a href="">Careers</a></p>
                   <p class="text-footer-email-template"><a href="">Contact Us</a></p>
                 </div>
-                <div class="border-bottom" style="border-bottom:1px solid #fff;margin-top:20px;"></div>
-                <p class="text-center" style="font-size:15px;font-family: mont;color:#999;margin-top:25px;">© All rights reserved | 2021 getfanita.com | Powered by Fanita Health</p>
+                <div class="border-bottom-email-template"></div>
+                <p class="text-center copy-footer">© All rights reserved | 2021 getfanita.com | Powered by Fanita Health</p>
               </td>
             </tr>
 
@@ -126,20 +116,34 @@
   table, td, div, h1, p {
     font-family: overpass;
   }
-  .no-padding {
-    padding:0;
-  }
-  .text-center {
-    text-align: center;
-  }
-  .mb-0 {
-    margin-bottom: 0;
-  }
+  .no-padding {padding:0;}
+
+  .text-center {text-align: center;}
+
+  .mb-0 {margin-bottom: 0;}
+
+  .mt-22 {margin-top: 22px;}
+
+  .mt-35 { margin-top: 35px;}
+
   .display-flex {
     display: flex;
   }
   .display-block {
     display: block;
+  }
+  .justify-content-center {
+    justify-content: center;
+  }
+  .body-template-email {
+    width:94%;
+    max-width:600px;
+    border:none;
+    border-spacing:0;
+    text-align:left;
+    font-size:16px;
+    line-height:22px;
+    color:#363636;
   }
   .set-body-email-template {
     margin:0;padding:0;word-spacing:normal;background-color:#FDE2E5;
@@ -167,6 +171,10 @@
     margin: 0px 30px;
     font-size: 18px;
   }
+  .backup-payment-title {
+    background-color: #F1FCFC !important;
+    padding:10px 70px !important;
+  }
   .title-email-template {
     font-family: 'mont';
     color: #000;
@@ -184,6 +192,9 @@
   }
   .sub-word {
     font-family: overpass;margin-top: 25px;
+  }
+  .backup-button-email-template {
+    margin-top: 45px;margin-bottom: 40px;
   }
   .button-email-template {
     background-color: #F8B7BF;
@@ -227,26 +238,49 @@
     margin: 0px 14px;
     text-decoration: none;
   }
-  @media screen and (max-width: 530px) {
-    .unsub {
-      display: block;
-      padding: 8px;
-      margin-top: 14px;
-      border-radius: 6px;
-      background-color: #555555;
-      text-decoration: none !important;
-      font-weight: bold;
-    }
-    .col-lge {
-      max-width: 100% !important;
-    }
+  .section-footer-email-template {
+    padding: 30px;
+    padding-bottom: 109px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #FDE2E5;
+    color: #cccccc;
+    background-image: url(assets/img/bg-footer.svg);
+    background-repeat: no-repeat;
+    background-position: right;
   }
-  @media screen and (min-width: 531px) {
-    .col-sml {
-      max-width: 27% !important;
+  .icon-footer-email-template {
+    margin:0px 30px;
+  }
+  .footer-text {
+    font-size: 15px;color: #999;
+  }
+  .border-bottom-email-template {
+    border-bottom:1px solid #fff;margin-top:20px;
+  }
+  .copy-footer {
+   font-size:15px;font-family: mont;color:#999;margin-top:25px;
+  }
+
+  @media (max-width:768px) {
+    .menu-email-template {
+      margin: 0px 10px;
     }
-    .col-lge {
-      max-width: 73% !important;
+    .notif-email-template {
+      padding:21px 96px;
+    }
+    .backup-payment-title {
+      padding : 10px 40px !important;
+    }
+    .text-footer-email-template > a {
+      margin: 0px 3.5px;
+    }
+    .no-mt-xs {
+      margin-top: 0 !important;
+    }
+    .section-footer-email-template {
+      padding: 30px 30px 0px 30px;
+      background-position: right 115px !important;
     }
   }
 </style>
