@@ -102,10 +102,33 @@
 /* hero-section STI */
 .pink-bg-hero {
   background-color: #FDF0F2;
-
+}
+.backup-box-content-hero {
+  margin-left: 183px;margin-top: 270px;max-width: 425px;
+}
+.title-sti {
+  font-family: 'Poppins';font-weight: bold;font-size: 48px;line-height: 1.25;
+}
+.sub-title-sti {
+  font-family: 'Be Vietnam', sans-serif;font-size:17px;
+}
+.mt-line-hero {
+  margin-top:130px;
+}
+.mt-sti-img {
+  margin-top: 110px;
+}
+.backup-form-hero-sti {
+  font-size:24px;font-family: poppins;margin-top:55px;
+}
+.sub-backup-form-hero-sti {
+  max-width: 605px;
+}
+.pink-text {
+  color: #EF6C7F; 
 }
 
-.form-cta , .form-cta:hover, .form-cta:active  , .form-cta:focus {
+.form-hero-sti , .form-hero-sti:hover, .form-hero-sti:active  , .form-hero-sti:focus {
   padding: 27px 20px;
   outline: none;
   box-shadow: none;
@@ -115,11 +138,11 @@
   border-bottom-left-radius: 20px;
   font-family: poppins;
 }
-.form-cta::placeholder {
+.form-hero-sti::placeholder {
   color: rgba(0, 0, 0, 0.5);
   font-family: 'be vietnam';
 }
-.btn-form-cta , .btn-form-cta:focus, .btn-form-cta:active {
+.btn-form-hero-sti , .btn-form-hero-sti:focus, .btn-form-hero-sti:active {
   background: #EF6C7F;
   font-family: poppins;
   color:#fff;
@@ -131,3 +154,92 @@
   border-bottom-right-radius: 20px;
 }
 /* hero-section STI */
+
+/* card section */
+.backup-card-section {
+  background-color: #F1FCFC;
+}
+.title-card-section {
+  font-size: 35px;max-width: 660px;line-height: 1.4;
+}
+.sub-title-card-section {
+  max-width:520px;line-height:1.6;
+}
+.mt-90-card {
+  margin-top:90px;
+}
+.mt-77-card {
+  margin-top:77px;
+}
+.card-ims {
+  border: none;border-radius: 24px;padding: 20px 18px;box-shadow: 0px 7px 16px 0px #CCCCCC26;
+
+}
+.title-card-ims {
+  font-size: 30px;margin-top: 24px;margin-bottom:16px;
+}
+.sub-title-card-ims {
+  font-size: 16px;
+}
+.mt-77-card > a {
+  font-family:poppins;color:#000;
+}
+.mt-77-card > a:hover , .mt-77-card > a:focus {
+  text-decoration: none;
+  color:#EF6C7F;
+  transition: all 0.3s ease-in-out;
+}
+/* card section */
+
+/* CTA */
+.backup-cta-sti {
+  max-width: 575px;
+}
+.title-cta-sti {
+  font-size:30px;padding-top: 55px !important;
+}
+/* CTA */
+
+/* STEP */
+.sub-step-section {
+  padding: 0px 300px;
+}
+.fsz-30 {
+ font-size: 30px;
+}
+.fsz-16 {
+  font-size: 16px;
+}
+.number-step {
+  font-family: 'Poppins';
+  font-weight: bold;
+  margin-right: 25px;
+  color: #EF6C7F;
+  background: #FDE2E5;
+  padding: 1px 16px;
+  border-radius: 100%;
+  font-size: 24px;
+  width: 40px;
+  height: 38px;
+
+}
+.title-step {
+  font-family: 'Poppins';
+  font-size: 17.5px;
+  margin-top: 6px;
+  color: #EF6C7F;
+}
+/* STEP */
+
+/* TIM MEDIS SECTION */
+.mm-45 {
+  margin-top:-45px;
+}
+.mm-45 > span {
+  background: #fff;
+  font-family: 'Be Vietnam';
+  font-weight: bold;
+  padding: 13px 22px;
+  border-radius: 12px;
+}
+/* TIM MEDIS SECTION */
