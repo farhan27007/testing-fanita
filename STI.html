@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/lp-baru.css">
     <link rel="stylesheet" href="assets/css/media.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css" />	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick-theme.min.css" />
+    <!-- slick slider -->
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>    
+    <!-- slick js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.js"></script>
 </head>
 <body>
 
@@ -60,26 +66,30 @@
     <section class="pink-bg-hero">
         <div class="container-fluid hero-sti">
             <div class="row">
-            <img src="assets/img/lp-baru/bg-hero-sti.svg" class="w-100 position-absolute" alt="">
-                <div class="col-lg-6">
+                <img src="assets/img/lp-baru/bg-hero-sti.svg" class="w-100 position-absolute d-none d-sm-block" alt="">
+
+                <!-- muncul saat display mobile -->
+                <div class="container set-mobile-hero-bg d-block d-sm-none d-md-none d-lg-none">
+                    <p class="text-center mt-sti-img"><img src="assets/img/lp-baru/sti.png"  class="img-fluid img-xs-head" alt=""></p>
+                </div>
+                <!-- muncul saat display mobile -->
+
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="backup-box-content-hero">
-                        <h1 class="title-sti">Infeksi Menular Seksual</h1>
-                        <p class="mt-4 sub-title-sti">Ada beberapa kasus di mana infeksi menular seksual tidak memunculkan gejala. Meskipun bergejala, hal tersebut baru akan muncul setelah beberapa hari, minggu, atau bulan setelah paparan mikroorganisme.</p>
+                        <h1 class="title-sti center-text-xs">Infeksi Menular Seksual</h1>
+                        <p class="mt-4 sub-title-sti center-text-xs">Ada beberapa kasus di mana infeksi menular seksual tidak memunculkan gejala. Meskipun bergejala, hal tersebut baru akan muncul setelah beberapa hari, minggu, atau bulan setelah paparan mikroorganisme.</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 d-none d-sm-block">
                     <p class="text-center mt-sti-img"><img src="assets/img/lp-baru/sti.png" class="img-fluid" alt=""></p>
                 </div>
             </div>
+            <p class="text-center mt-line-hero "><img src="assets/img/lp-baru/line-hero.svg" class="img-fluid" alt=""></p>
         </div>
-        <br>
-        <p class="text-center mt-line-hero"><img src="assets/img/lp-baru/line-hero.svg" alt=""></p>
         <center class="pb-5 backup-form-hero-sti">
             <div class="sub-backup-form-hero-sti">
-                <p class="text-center mb-0">Kami akan segera menyediakan  solusi untuk berbagai masalah infeksi menular seksual.</p>
-                <p class="text-center pink-text">Jadilah orang pertama yang mengetahuinya!</p>
-
-                <div class="input-group mt-5">
+                <p class="text-center mb-0">Kami akan segera menyediakan  solusi untuk berbagai masalah infeksi menular seksual. <span class="pink-text">Jadilah orang pertama yang mengetahuinya!</span> </p>
+                <div class="input-group mt-5 mt-group-xs">
                     <input type="text" class="form-control form-hero-sti" placeholder="Ketik alamat email Anda" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <div class="input-group-append">
                         <button class="btn btn-form-hero-sti" type="button">Daftar</button>
@@ -92,166 +102,425 @@
 
     <!-- card section -->
     <section class="container-fluid backup-card-section">
-        <center>
-            <p class="title-sti pt-5 title-card-section"><span class="pink-text">Infeksi menular seksual (IMS)</span> Umum di Indonesia</p>
-            <p class="sub-title-sti sub-title-card-section">Disebabkan oleh virus, bakteri, atau parasit yang ditularkan melalui kontak kulit antar alat kelamin dan hubungan seks tanpa kondom, baik secara vaginal, anal, atau oral.</p>
-        </center>
-        <div class="container">
-            <div class="row justify-content-center mt-90-card">
-                
-                <!-- card -->
-                <div class="col-lg-4 mb-5">
-                    <div class="card card-ims">
-                        <div class="card-body">
-                            <p><img src="assets/img/lp-baru/HPV.svg" alt=""></p>
-                            <h3 class="title-sti title-card-ims">HPV</h3>
-                            <p class="sub-title-sti sub-title-card-ims"><i><b>Human papillomavirus</b></i> merupakan virus yang biasanya menyebabkan kutil kelamin (disebabkan oleh HPV-6 dan 11) dan kanker kelamin (disebabkan oleh HPV-16 dan 18). Perlu adanya pemeriksaan untuk menentukan jenis virus.</p>
-                            <p class="text-center mt-77-card"><a href="">Pelajari lebih lanjut &nbsp;<img src="assets/img/lp-baru/accordion-next.svg" alt="" class="ml-4"></a></p>
-                        </div>
+    <center>
+        <p class="title-sti pt-5 title-card-section xs-title-card-section"><span class="pink-text">Infeksi menular seksual (IMS)</span> Umum di Indonesia</p>
+        <p class="sub-title-sti sub-title-card-section">Disebabkan oleh virus, bakteri, atau parasit yang ditularkan melalui kontak kulit antar alat kelamin dan hubungan seks tanpa kondom, baik secara vaginal, anal, atau oral.</p>
+    </center>
+    <div class="container">
+        <div class="row justify-content-center mt-90-card">
+            
+            <!-- card -->
+            <div class="col-lg-4 mb-5">
+                <div class="card card-ims">
+                    <div class="card-body">
+                        <p><img src="assets/img/lp-baru/HPV.svg" alt=""></p>
+                        <h3 class="title-sti title-card-ims xs-title-card-section">HPV</h3>
+                        <p class="sub-title-sti sub-title-card-ims"><i><b>Human papillomavirus</b></i> merupakan virus yang biasanya menyebabkan kutil kelamin (disebabkan oleh HPV-6 dan 11) dan kanker kelamin (disebabkan oleh HPV-16 dan 18). Perlu adanya pemeriksaan untuk menentukan jenis virus.</p>
+                        <p class="text-center mt-77-card"><a href="">Pelajari lebih lanjut &nbsp;<img src="assets/img/lp-baru/accordion-next.svg" alt="" class="ml-4"></a></p>
                     </div>
                 </div>
-                <!-- card -->
-
-                <!-- card -->
-                <div class="col-lg-4 mb-5">
-                    <div class="card card-ims">
-                        <div class="card-body">
-                            <p><img src="assets/img/lp-baru/syphilis.svg" alt=""></p>
-                            <h3 class="title-sti title-card-ims">Sifilis</h3>
-                            <p class="sub-title-sti sub-title-card-ims">Merupakan infeksi menular seksual sistemik yang disebabkan oleh bakteri Treponema pallidum. Jika Anda menemukan adanya luka pada alat kelamin atau di dalam/sekitar mulut, demam, serta ruam kulit, segera kunjungi dokter untuk memeriksakan kondisi Anda.</p>
-                            <p class="text-center mt-77-card"><a href="">Pelajari lebih lanjut &nbsp;<img src="assets/img/lp-baru/accordion-next.svg" alt="" class="ml-4"></a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- card -->
-                
-                <!-- card -->
-                <div class="col-lg-4 mb-5">
-                    <div class="card card-ims">
-                        <div class="card-body">
-                            <p><img src="assets/img/lp-baru/gonorrhea.svg" alt=""></p>
-                            <h3 class="title-sti title-card-ims">Gonorrhea</h3>
-                            <p class="sub-title-sti sub-title-card-ims">Merupakan infeksi menular seksual yang disebabkan oleh bakteri Neisseria gonorrhoeae. Jika Anda mengalami peningkatan keputihan, nyeri saat buang air kecil, dan gejala lainnya, segera kunjungi dokter untuk mendapatkan pemeriksaan menyeluruh.</p>
-                            <p class="text-center mt-77-card"><a href="">Pelajari lebih lanjut &nbsp;<img src="assets/img/lp-baru/accordion-next.svg" alt="" class="ml-4"></a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- card -->
-
-                <!-- card -->
-                <div class="col-lg-4 mb-5">
-                    <div class="card card-ims">
-                        <div class="card-body">
-                            <p><img src="assets/img/lp-baru/chlamydia.svg" alt=""></p>
-                            <h3 class="title-sti title-card-ims">Chlamydia</h3>
-                            <p class="sub-title-sti sub-title-card-ims">Merupakan infeksi menular seksual yang disebabkan oleh bakteri Chlamydia trachomatis. Apabila Anda mengalami keputihan yang tidak normal dan sensasi terbakar saat buang air kecil, segera periksakan kondisi Anda kepada dokter!</p>
-                            <p class="text-center mt-77-card"><a href="">Pelajari lebih lanjut &nbsp;<img src="assets/img/lp-baru/accordion-next.svg" alt="" class="ml-4"></a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- card -->
-
-                <!-- card -->
-                <div class="col-lg-4 mb-5">
-                    <div class="card card-ims">
-                        <div class="card-body">
-                            <p><img src="assets/img/lp-baru/hiv.svg" alt=""></p>
-                            <h3 class="title-sti title-card-ims">HIV</h3>
-                            <p class="sub-title-sti sub-title-card-ims">Merupakan virus yang menyerang sistem kekebalan tubuh. Virus ini dapat memicu terjadinya acquired immunodeficiency syndrome (AIDS). Sangat penting untuk memeriksakan kondisi Anda ketika muncul gejala demam yang disertai dengan keringat malam, sariawan, dan gejala lainnya.</p>
-                            <p class="text-center mt-77-card"><a href="">Pelajari lebih lanjut &nbsp;<img src="assets/img/lp-baru/accordion-next.svg" alt="" class="ml-4"></a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- card -->
-                
             </div>
+            <!-- card -->
+  
+            <!-- card -->
+            <div class="col-lg-4 mb-5">
+                <div class="card card-ims">
+                    <div class="card-body">
+                        <p><img src="assets/img/lp-baru/syphilis.svg" alt=""></p>
+                        <h3 class="title-sti title-card-ims xs-title-card-section">Sifilis</h3>
+                        <p class="sub-title-sti sub-title-card-ims">Merupakan infeksi menular seksual sistemik yang disebabkan oleh bakteri Treponema pallidum. Jika Anda menemukan adanya luka pada alat kelamin atau di dalam/sekitar mulut, demam, serta ruam kulit, segera kunjungi dokter untuk memeriksakan kondisi Anda.</p>
+                        <p class="text-center mt-77-card"><a href="">Pelajari lebih lanjut &nbsp;<img src="assets/img/lp-baru/accordion-next.svg" alt="" class="ml-4"></a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            
+            <!-- card -->
+            <div class="col-lg-4 mb-5">
+                <div class="card card-ims">
+                    <div class="card-body">
+                        <p><img src="assets/img/lp-baru/gonorrhea.svg" alt=""></p>
+                        <h3 class="title-sti title-card-ims xs-title-card-section">Gonorrhea</h3>
+                        <p class="sub-title-sti sub-title-card-ims">Merupakan infeksi menular seksual yang disebabkan oleh bakteri Neisseria gonorrhoeae. Jika Anda mengalami peningkatan keputihan, nyeri saat buang air kecil, dan gejala lainnya, segera kunjungi dokter untuk mendapatkan pemeriksaan menyeluruh.</p>
+                        <p class="text-center mt-77-card"><a href="">Pelajari lebih lanjut &nbsp;<img src="assets/img/lp-baru/accordion-next.svg" alt="" class="ml-4"></a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+  
+            <!-- card -->
+            <div class="col-lg-4 mb-5">
+                <div class="card card-ims">
+                    <div class="card-body">
+                        <p><img src="assets/img/lp-baru/chlamydia.svg" alt=""></p>
+                        <h3 class="title-sti title-card-ims xs-title-card-section">Chlamydia</h3>
+                        <p class="sub-title-sti sub-title-card-ims">Merupakan infeksi menular seksual yang disebabkan oleh bakteri Chlamydia trachomatis. Apabila Anda mengalami keputihan yang tidak normal dan sensasi terbakar saat buang air kecil, segera periksakan kondisi Anda kepada dokter!</p>
+                        <p class="text-center mt-77-card"><a href="">Pelajari lebih lanjut &nbsp;<img src="assets/img/lp-baru/accordion-next.svg" alt="" class="ml-4"></a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+  
+            <!-- card -->
+            <div class="col-lg-4 mb-5">
+                <div class="card card-ims">
+                    <div class="card-body">
+                        <p><img src="assets/img/lp-baru/hiv.svg" alt=""></p>
+                        <h3 class="title-sti title-card-ims xs-title-card-section">HIV</h3>
+                        <p class="sub-title-sti sub-title-card-ims">Merupakan virus yang menyerang sistem kekebalan tubuh. Virus ini dapat memicu terjadinya acquired immunodeficiency syndrome (AIDS). Sangat penting untuk memeriksakan kondisi Anda ketika muncul gejala demam yang disertai dengan keringat malam, sariawan, dan gejala lainnya.</p>
+                        <p class="text-center mt-77-card"><a href="">Pelajari lebih lanjut &nbsp;<img src="assets/img/lp-baru/accordion-next.svg" alt="" class="ml-4"></a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            
         </div>
+    </div>
     </section>
     <!-- card section -->
 
     <!-- cta section -->
     <section class="container-fluid pb-5 pink-bg-hero">
-       <div class="container backup-cta-sti">
-        <center>
-            <p class="title-sti pt-5 title-cta-sti">Gabung Bersama Fanita</p>
-            <p class="mt-4 sub-title-sti">Dapatkan pemberitahuan saat kami meluncurkan berbagai layanan untuk masalah menstruasi.</p>
-            <div class="input-group mt-5">
-                <input type="text" class="form-control form-hero-sti" placeholder="Ketik alamat email Anda" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-form-hero-sti" type="button">Daftar</button>
-                </div>
-            </div>
-        </center>
-       </div> 
+    <div class="container backup-cta-sti">
+     <center>
+         <p class="title-sti pt-5 title-cta-sti xs-title-card-section">Gabung Bersama Fanita</p>
+         <p class="mt-4 sub-title-sti">Dapatkan pemberitahuan saat kami meluncurkan berbagai layanan untuk masalah menstruasi.</p>
+         <div class="input-group mt-5">
+             <input type="text" class="form-control form-hero-sti" placeholder="Ketik alamat email Anda" aria-label="Recipient's username" aria-describedby="basic-addon2">
+             <div class="input-group-append">
+                 <button class="btn btn-form-hero-sti" type="button">Daftar</button>
+             </div>
+         </div>
+     </center>
+    </div> 
     </section>
     <!-- cta section -->
 
     <!-- step section -->
     <section class="container-fluid step-section mt-90-card">
-        <div class="container sub-step-section">
-            <p class="text-center"><img src="assets/img/lp-baru/lab-test.svg" class="img-fluid" alt=""></p>
-            <p class="title-sti text-center mt-4 mb-5 fsz-30">Langkah Pemeriksaan</p>
-            
-            <div class="mb-4">
-                <div class="d-flex">
-                    <p class="number-step">1</p>
-                    <div class="d-block">
-                        <p class="title-step">Berkonsultasi dengan Dokter</p>
-                        <p class="sub-title-sti fsz-16">Setelah Anda merasakan adanya gejala di atas, segera kunjungi dokter untuk mendapatkan pemeriksaan menyeluruh. Hal ini bertujuan untuk mendukung diagnosis yang telah diberikan.</p>
-                    </div>
+    <div class="container sub-step-section">
+        <p class="text-center"><img src="assets/img/lp-baru/lab-test.svg" class="img-fluid" alt=""></p>
+        <p class="title-sti text-center mt-4 mb-5 fsz-30 xs-title-card-section">Langkah Pemeriksaan</p>
+        
+        <div class="mb-4">
+            <div class="d-flex">
+                <p class="number-step">1</p>
+                <div class="d-block">
+                    <p class="title-step">Berkonsultasi dengan Dokter</p>
+                    <p class="sub-title-sti fsz-16">Setelah Anda merasakan adanya gejala di atas, segera kunjungi dokter untuk mendapatkan pemeriksaan menyeluruh. Hal ini bertujuan untuk mendukung diagnosis yang telah diberikan.</p>
                 </div>
             </div>
-
-            <div class="mb-4">
-                <div class="d-flex">
-                    <p class="number-step">2</p>
-                    <div class="d-block">
-                        <p class="title-step">Pemeriksaan Laboratorium secara Spesifik</p>
-                        <p class="sub-title-sti fsz-16">Anda perlu menjalankan pemeriksaan laboratorium secara spesifik tergantung pada penyebab infeksinya. Beberapa pemeriksaan perlu dilakukan rutin setiap beberapa tahun sekali sesuai dengan anjuran dokter.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mb-4">
-                <div class="d-flex">
-                    <p class="number-step">3</p>
-                    <div class="d-block">
-                        <p class="title-step">Diskusikan Persiapan Khusus yang Diperlukan</p>
-                        <p class="sub-title-sti fsz-16">Beberapa pemeriksaan membutuhkan persiapan khusus. Oleh karena itu, pastikan Anda telah mendiskusikannya dengan dokter. Untuk memutuskan mana pemeriksaan yang paling tepat dan aman untuk Anda, sangat penting untuk mendiskusikan pro dan kontra dari setiap jenis pemeriksaan.</p>
-                    </div>
-                </div>
-            </div>
-
-            
         </div>
+  
+        <div class="mb-4">
+            <div class="d-flex">
+                <p class="number-step">2</p>
+                <div class="d-block">
+                    <p class="title-step">Pemeriksaan Laboratorium secara Spesifik</p>
+                    <p class="sub-title-sti fsz-16">Anda perlu menjalankan pemeriksaan laboratorium secara spesifik tergantung pada penyebab infeksinya. Beberapa pemeriksaan perlu dilakukan rutin setiap beberapa tahun sekali sesuai dengan anjuran dokter.</p>
+                </div>
+            </div>
+        </div>
+  
+        <div class="mb-4">
+            <div class="d-flex">
+                <p class="number-step">3</p>
+                <div class="d-block">
+                    <p class="title-step">Diskusikan Persiapan Khusus yang Diperlukan</p>
+                    <p class="sub-title-sti fsz-16">Beberapa pemeriksaan membutuhkan persiapan khusus. Oleh karena itu, pastikan Anda telah mendiskusikannya dengan dokter. Untuk memutuskan mana pemeriksaan yang paling tepat dan aman untuk Anda, sangat penting untuk mendiskusikan pro dan kontra dari setiap jenis pemeriksaan.</p>
+                </div>
+            </div>
+        </div>
+  
+        
+    </div>
     </section>
     <!-- step section -->
 
     <!-- tim medis section -->
     <section class="container-fluid tim-medis-section pink-bg-hero pb-5 mt-77-card">
-        <div class="container">
-            <p class="title-sti text-center title-cta-sti mt-4 mb-5">Tim Medis</p>
-            <div class="row justify-content-center">
-                <div class="col-lg-4">
-                    <p class="text-center"><img src="assets/img/lp-baru/drIda.png" class="img-fluid" alt=""></p>
-                    <p class="text-center mm-45"><span>dr. Ida Ayu Narayani</span></p>
+    <div class="container">
+        <p class="title-sti text-center title-cta-sti mt-4 mb-5 xs-title-card-section">Tim Medis</p>
+        <div class="row justify-content-center">
+
+            <div class="col-6">
+                <p class="text-center"><img src="assets/img/lp-baru/drIda.png" class="img-fluid" alt=""></p>
+                <p class="text-center mm-45 d-none d-sm-block"><span>dr. Ida Ayu Narayani</span></p>
+
+                <!-- muncul saat display mobile -->
+                <p class="text-center doctor-name-xs mm-45 d-block d-sm-none">dr. Ida Ayu Narayani</p>
+                <!-- muncul saat display mobile -->
+
+            </div>
+
+            <div class="col-6">
+                <p class="text-center"><img src="assets/img/lp-baru/drIsman.png" class="img-fluid" alt=""></p>
+                <p class="text-center mm-45 d-none d-sm-block"><span>dr.  Muhammad Isman Sandira</span></p>
+
+                <!-- muncul saat display mobile -->
+                <p class="text-center doctor-name-xs mm-45 d-block d-sm-none">dr.  Muhammad Isman Sandira</p>
+                <!-- muncul saat display mobile -->
+
+            </div>
+
+        </div>
+    </div>
+    </section>
+    <!-- tim medis section -->
+
+    <!-- testimonial section -->
+    <section class="container-fluid slide-testi">
+        <div class="container sub-slide-testi mb-5">
+    
+            <!--  -->
+            <center class="backup-title-layanan cs-testi-mb" data-aos="zoom-in">
+            <p class="title-sti text-center title-cta-sti  mb-2 xs-title-card-section">Kata Mereka</p>
+                    <p class="mb-5 sub-title-sti">Berikut testimoni para wanita yang telah bergabung bersama kami</p>
+            </center>
+            <!--  -->
+        
+            <div class="slider responsive-1">
+        
+                <!-- loop untuk testimonial --> 
+                <div class="backup-testimonial-card">
+                    <div class="testimonial-card">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                        </div>
+                        <p class="content-testimonial">
+                            “Suka banget deh evaluasinya bener bener detil nanyain riwayat kesehatanku! Jadi makin yakin.”	
+                        </p>
+                    </div>
+                    <div class="testi-person">
+                        <center>
+                        <img src="assets/img/lp-baru/testi-person.png" class="img-fluid mt-2"  alt="">
+                            <p class="title-sti pt-3 mb-1" style="font-size: 18px;">Dwenda dexiana</p>
+                            <p class="sub-title-sti mb-4" style="font-size: 16px;">Pegawai Swasta, 29 tahun</p>
+                        </center>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <p class="text-center"><img src="assets/img/lp-baru/drIsman.png" class="img-fluid" alt=""></p>
-                    <p class="text-center mm-45"><span> dr.  Muhammad Isman Sandira</span></p>
+                <!-- loop untuk testimonial -->
+
+                <!-- loop untuk testimonial --> 
+                <div class="backup-testimonial-card">
+                    <div class="testimonial-card">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                        </div>
+                        <p class="content-testimonial">
+                            “Suka banget deh evaluasinya bener bener detil nanyain riwayat kesehatanku! Jadi makin yakin.”	
+                        </p>
+                    </div>
+                    <div class="testi-person">
+                        <center>
+                        <img src="assets/img/lp-baru/testi-person.png" class="img-fluid mt-2"  alt="">
+                            <p class="title-sti pt-3 mb-1" style="font-size: 18px;">Dwenda dexiana</p>
+                            <p class="sub-title-sti mb-4" style="font-size: 16px;">Pegawai Swasta, 29 tahun</p>
+                        </center>
+                    </div>
                 </div>
+                <!-- loop untuk testimonial -->
+                
+                <!-- loop untuk testimonial --> 
+                <div class="backup-testimonial-card">
+                    <div class="testimonial-card">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                        </div>
+                        <p class="content-testimonial">
+                            “Suka banget deh evaluasinya bener bener detil nanyain riwayat kesehatanku! Jadi makin yakin.”	
+                        </p>
+                    </div>
+                    <div class="testi-person">
+                        <center>
+                        <img src="assets/img/lp-baru/testi-person.png" class="img-fluid mt-2"  alt="">
+                            <p class="title-sti pt-3 mb-1" style="font-size: 18px;">Dwenda dexiana</p>
+                            <p class="sub-title-sti mb-4" style="font-size: 16px;">Pegawai Swasta, 29 tahun</p>
+                        </center>
+                    </div>
+                </div>
+                <!-- loop untuk testimonial -->
+
+                <!-- loop untuk testimonial --> 
+                <div class="backup-testimonial-card">
+                    <div class="testimonial-card">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                            <img src="assets/img/lp-baru/star-icon.svg" class="mr-1 ml-1" alt="">
+                        </div>
+                        <p class="content-testimonial">
+                            “Suka banget deh evaluasinya bener bener detil nanyain riwayat kesehatanku! Jadi makin yakin.”	
+                        </p>
+                    </div>
+                    <div class="testi-person">
+                        <center>
+                        <img src="assets/img/lp-baru/testi-person.png" class="img-fluid mt-2"  alt="">
+                            <p class="title-sti pt-3 mb-1" style="font-size: 18px;">Dwenda dexiana</p>
+                            <p class="sub-title-sti mb-4" style="font-size: 16px;">Pegawai Swasta, 29 tahun</p>
+                        </center>
+                    </div>
+                </div>
+                <!-- loop untuk testimonial -->
+        
             </div>
         </div>
     </section>
-    <br><br>
-    <!-- tim medis section -->
+    <!-- testimonial section -->
 
+    <!-- cta section -->
+    <section class="container-fluid pb-5 pink-bg-hero">
+        <div class="container backup-cta-sti">
+         <center>
+             <p class="title-sti pt-5 title-cta-sti xs-title-card-section">Gabung Bersama Fanita</p>
+             <p class="mt-4 sub-title-sti">Dapatkan pemberitahuan saat kami meluncurkan berbagai layanan untuk masalah menstruasi.</p>
+             <div class="input-group mt-5">
+                 <input type="text" class="form-control form-hero-sti" placeholder="Ketik alamat email Anda" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                 <div class="input-group-append">
+                     <button class="btn btn-form-hero-sti" type="button">Daftar</button>
+                 </div>
+             </div>
+         </center>
+        </div> 
+    </section>
+     <!-- cta section -->
+
+    <!-- footer section -->
+    <section class="container-fluid section-footer">
+    <div class="container pt-3 pb-3 pl-0 pr-0">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <p class="icon-fanita-footer"><img src="assets/img/lp-baru/footer-icon-fanita.svg" alt=""></p>
+                <p class="title-sti pt-3 fsz-18">Bersama Fanita</p>
+                <p class="sub-title-sti mb-2"><a href="#" class="sub-footer-title"><b>Tentang Kami</b></a></p>
+                <p class="sub-title-sti mb-2"><a href="#" class="sub-footer-title"><b>Karier</b></a></p>
+                <p class="sub-title-sti mb-2"><a href="#" class="sub-footer-title"><b>Hubungi Kami</b></a></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                <p class="icon-fanita-footer"><img src="assets/img/lp-baru/footer-icon-fanita.svg" class="no-opacity" alt=""></p>
+                <p class="title-sti pt-3 fsz-18">Alamat</p>
+                <p class="sub-title-sti mb-2 fsz-15">Jl. Prof Dr Satrio Kav.C4, Kuningan Timur, Setiabudi, Kota Jakarta Selatan, DKI Jakarta</p>
+            </div>
+  
+            <div class="col-2 col-md-2 d-sm-none d-lg-block col-xs-12"></div>
+  
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <p class="icon-fanita-footer"><img src="assets/img/lp-baru/footer-icon-fanita.svg" class="no-opacity d-none d-md-block" alt=""></p>
+                <p class="title-sti pt-3 fsz-18">Media Sosial</p>
+                <div class="d-flex">
+                    <p><a href=""><img src="https://getfanita.com/wp-content/themes/astra/assets/images/ic-facebook.svg" class="mr-3" alt=""></a></p>
+                    <p><a href=""><img src="https://getfanita.com/wp-content/themes/astra/assets/images/ic-instagram.svg" class="mr-3" alt=""></a></p>
+                    <p><a href=""><img src="https://getfanita.com/wp-content/themes/astra/assets/images/ic-twitter.svg" class="mr-3" alt=""></a></p>
+                    <p><a href=""><img src="https://getfanita.com/wp-content/themes/astra/assets/images/ic-youtube.svg" class="mr-3" alt=""></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="border-footer"></div>        
+        <div class="row">
+            <!-- hanya muncul ketika di handphone -->
+            <div class="col-12 d-block d-sm-none d-md-none d-lg-none">               
+                <p class="sub-title-sti mr-3 mb-1"><a href="" class="link-bottom-footer">Syarat & Ketentuan</a></p>
+                <p class="sub-title-sti"><a href="" class="link-bottom-footer">Kebijakan Privasi</a></p> 
+            </div>
+            <!-- hanya muncul ketika di handphone -->
+  
+            <div class="col-lg-4 col-md-12 display-mt-footer">
+                <p class="sub-title-sti text-bottom-footer mb-2">All rights reserved © 2021 | getfanita.com </p>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <p class="text-center sub-title-sti text-bottom-footer text-left-xs">Powered by Fanita Health</p>
+            </div>
+  
+            <div class="col-lg-4 col-md-12 col-sm-12 d-none d-sm-block d-md-block d-lg-block">
+                <div class="d-flex justify-content-center js-mobile-start">
+                    <p class="text-center sub-title-sti mr-3"><a href="" class="link-bottom-footer">Syarat & Ketentuan</a></p>
+                    <p class="text-center sub-title-sti"><a href="" class="link-bottom-footer">Kebijakan Privasi</a></p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- footer section -->
+  
 </body>
 </html>
 
 <script>
-    // script animation navbar on scroll
+// script animation navbar on scroll
     $(window).scroll(function(){
-	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-});
+	    $('nav').toggleClass('scrolled', $(this).scrollTop() > 50); 
+    });
+// script animation navbar on scroll
+
+// script slick slider
+$(document).ready(function() {
+			$('.responsive-1').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow: $('.prev-1'),
+        nextArrow: $('.next-1'),
+        responsive: [{
+        	breakpoint: 1024,
+        	settings: {
+        		slidesToShow: 2,
+        		slidesToScroll: 1,
+                // centerMode: true,
+
+            }
+
+        }, {
+        	breakpoint: 800,
+        	settings: {
+        		slidesToShow: 1,
+        		slidesToScroll: 1,
+        		dots: true,
+        		infinite: true,
+
+        	}
+
+
+        }, {
+        	breakpoint: 600,
+        	settings: {
+        		slidesToShow: 1,
+        		slidesToScroll: 1,
+        		dots: true,
+        		infinite: true,
+
+        	}
+        }, {
+        	breakpoint: 480,
+        	settings: {
+        		slidesToShow: 1,
+        		slidesToScroll: 1,
+        		dots: true,
+        		infinite: true,
+        		autoplay: true,
+        		autoplaySpeed: 2000,
+        	}
+        }]
+    });
+
+		});
+// script slick slider
 </script>
+

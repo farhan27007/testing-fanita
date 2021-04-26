@@ -1,9 +1,5 @@
 /* root settings */
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&family=Poppins:wght@400;700&display=swap');
-@font-face {
-    font-family: 'overpass';
-    src: url(../../assets/fonts/overpass.ttf);
-}
 
 /* nav */
 .color-txt-blck {
@@ -210,6 +206,12 @@
 .fsz-16 {
   font-size: 16px;
 }
+.fsz-18 {
+  font-size: 18px !important; 
+}
+.fsz-15 {
+  font-size: 15px !important; 
+}
 .number-step {
   font-family: 'Poppins';
   font-weight: bold;
@@ -243,3 +245,215 @@
   border-radius: 12px;
 }
 /* TIM MEDIS SECTION */
+
+/* Testimonial section */
+.slide-testi {
+background-color: #F1FCFC;
+  padding-bottom: 30px;
+}
+.cs-testi-mb {
+  margin-bottom: 30px;
+}
+.sub-slide-testi {
+  margin-bottom: 30px;
+}
+.backup-testimonial-card {
+  padding: 9px;
+}
+.testimonial-card {
+  padding: 30px;
+  position: relative;
+  background: #fff;
+  webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 7px 16px 0px #cccccc26;
+  /*     box-shadow: 0px 3px 17px rgba(115, 128, 157, 0.2); */
+}
+.testimonial-card:after {
+    content: "";
+    position: absolute;
+    z-index: 9;
+    bottom: -36px;
+    left: 50%;
+    right: 50%;
+    height: 0;
+    width: 0;
+    border-top: 22px solid #fff;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+.content-testimonial {
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing:0.3px;
+  color: #000;
+  font-family: be vietnam;
+  text-align: center;
+}
+.testi-person {
+  padding: 25px 0 0 25px;
+  position: relative;
+}
+.testi-person > img {
+  object-fit: cover;
+}
+.testi-person-detail {
+  padding: 15px 0 12px 0;
+}
+.slick-dots li.slick-active button:before {
+  color: #76E5E0 !important;
+}
+.slick-dots li button {
+    opacity: 1 !important;
+    color: #CCCCCC !important; 
+}
+.slick-dots li button:before {
+    color: #cccc !important;
+    opacity: 1 !important;
+}
+/* Testimonial section */
+
+/* footer section */
+.icon-fanita-footer {
+  margin-top: 48px;
+}
+.border-footer {
+  border-bottom:1px solid #E6E6E6;
+  margin-top: 22px;
+  margin-bottom: 17px;
+}
+.sub-footer-title {
+  font-size: 16px;color:#666666;text-decoration: none;
+}
+.no-opacity {
+  opacity: 0;
+}
+.text-bottom-footer {
+  font-size: 14px;color:#999999;
+}
+.link-bottom-footer , .link-bottom-footer:hover {
+ font-size: 14px;color:#999999;font-weight: bold;text-decoration: none;      
+}
+/* footer section */
+
+
+
+/* media screen */
+@media (max-width:770px) {
+  .backup-box-content-hero {
+    padding: 0px 15px;
+    margin-left: 0;
+    margin-top: 160px;
+  }
+  .sub-step-section {
+    padding :0px 150px;
+  }
+}
+
+@media (max-width:767px) {
+
+  /* navbar */
+  .navbar-light {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    background-color: #fff !important;
+  }
+  .navbar-nav {
+      margin-top:15px;
+      margin-bottom: 15px;
+  }
+  .navbar-brand {
+      margin-top: -8px;
+  }
+  .menu-list-item {
+      text-align: center;
+      margin-left: 0;
+      font-size: 16px !important;
+  }
+  .text-left-xs {
+      text-align: left !important;
+  }
+  .display-mt-footer {
+      margin-top: 60px !important;
+  }
+  .js-mobile-start {
+      justify-content: start !important;
+  }
+
+  /* hero-sti */
+  .backup-box-content-hero {
+    padding: 0px 15px;
+    margin-left: 0;
+    margin-top: 35px;
+  }
+  .set-mobile-hero-bg {
+    background-image: url(../../assets/img/lp-baru/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .title-sti {
+    font-size: 31.5px;
+    line-height: 1.3;
+  }
+  .sub-title-sti {
+    font-size: 16px;
+  }
+  .center-text-xs {
+    text-align: center;
+  }
+  .mt-line-hero {
+    margin-top: 12px;
+    padding: 0px 30px;
+  }
+  .backup-form-hero-sti {
+    font-size: 18px;
+    padding: 0px 25px;
+    margin-top: 20px;
+  }
+  .form-hero-sti, .form-hero-sti:hover, .form-hero-sti:active, .form-hero-sti:focus {
+    padding:24px 20px;
+    font-size: 15px;
+  }
+  .mt-group-xs {
+    margin-top: 25px !important;
+  }
+  .img-xs-head {
+    width: 177px;
+  }
+
+  /* card section */
+  .xs-title-card-section {
+    font-size: 26px !important;
+  }
+
+  /* step section */
+  .sub-step-section {
+    padding: 0px 15px;
+  }
+  .number-step {
+    font-size: 18px;
+    padding:1px 12px;
+    height: 30px;
+  }
+
+  /* tim medis section */
+  .doctor-name-xs {
+    background: #fff;
+    font-family: 'Be Vietnam';
+    font-weight: bold;
+    padding: 13px 22px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width:380px) {
+  .img-xs-head {
+    width: 137px;
+  }
+}
+@media (max-width:325px) {
+  .img-xs-head {
+    width: 95px;
+  }
+}
