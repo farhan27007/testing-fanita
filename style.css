@@ -1,0 +1,2804 @@
+/* Note: The CSS files are loaded from assets/css/ folder. */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400&display=swap');
+
+/*New Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&family=Poppins:wght@400;700&display=swap');
+
+*{
+  scroll-behavior: smooth !important;
+}
+body, html { 
+  overflow-x:hidden; 
+}
+body {
+  background: white;
+  font-family: 'Be Vietnam' !important;
+  font-size: 16px !Important;
+  overflow-y:hidden;
+}
+.ast-container {
+  max-width: 100% !Important;
+  padding: 0 !Important;
+}
+a {
+  color: black !important;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat' !important;
+  font-weight: 700 !Important;
+}
+button {
+  font-family: 'Montserrat' !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+}
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 3px;
+  border: 0;
+  clear: both;
+  display: block;
+  height: 1px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-style: italic;
+  opacity: 1; /* Firefox */
+  font-family: 'Overpass';
+}
+
+.overflow-auto {
+  overflow-x: auto;
+}
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+
+/*Buttons*/
+.button-primary, .btn-cu, .btn-eval, .btn-evalback, .btn-evalnext {
+  border-radius: 10px !Important;
+  background: #ECC4C2 !Important;
+  /*box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 0px 0 rgb(0 0 0 / 19%);*/
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%) !Important;
+  color: black !Important;
+}
+.button-primary:hover, .button-primary:active, .button-primary:focus, .button-primary:visited {
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
+  background: #ECC4C2;
+  color: black;
+}
+
+.btn-newsletter {
+  border-radius: 0 10px 10px 0 !important;
+  background: #B4EBE8 !Important;
+  /*box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 0px 0 rgb(0 0 0 / 19%);*/
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%) !Important;
+  color: black !Important;
+  font-weight: 700 !Important;
+  font-family: 'Montserrat' !Important;
+}
+.btn-cu, .btn-jp, .btn-eval, .btn-evalback, .btn-evalnext {
+  font-size: 20px;
+  font-family: 'Montserrat' !Important;
+  font-weight: 700 !important;
+}
+.btn-cu, .btn-jp, .btn-eval {
+  padding: 20px 100px;
+}
+
+/*Alignments*/
+.center {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-red {
+  color: red;
+}
+
+/*Positions*/
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex {
+  display: flex;
+}
+.block {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.center-vertical {
+  top: 50%;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*Z-index*/
+.sendtoback {
+  z-index: -1;
+}
+.zindex10, .stars, .review, .woocommerce-tabs {
+  z-index: 10;
+}
+
+/*Backgrounds*/
+.bg-white {
+  background: white;
+}
+.bg-lightpink {
+  background-color: #F5DFDD !important;
+}
+.bg-lightblue {
+  background-color: #ECFAFC !important;
+}
+.row.sectionfaq {
+  /*background: #f0fbfc;*/
+}
+.bg-lightpink.lp {
+  z-index: -1;
+}
+
+/*Width*/
+.width100 {
+  width: 100%;
+}
+
+/*Paddings*/
+.no-padding {
+  padding: 0;
+}
+.padbot20 {
+  padding-bottom: 20px;
+}
+.padbot60 {
+  padding-bottom: 60px !important;
+}
+.padding20 {
+  padding: 20px;
+}
+.padding10 {
+  padding: 10px;
+}
+.padding12 {
+  padding: 12px;
+}
+.padtop40 {
+  padding-top: 40px;
+}
+
+/*Margins*/
+.marginright40 {
+  margin-right: 40px;
+}
+.margintopbottom20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.marginauto {
+  margin: auto;
+}
+.margin0 {
+  margin: 0;
+}
+.forcemarginauto {
+  margin: auto !Important;
+}
+
+/*Max Char*/
+.max-char {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/*Cards*/
+.card-body {
+  height: fit-content;
+  min-width: 300px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 0px 0 rgb(0 0 0 / 19%);
+}
+.card-title {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.card-image {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/*Banner*/
+.bg-banner-dekstop, .bg-banner-mobile, .bg-bcbanner {
+  position: absolute;
+  left: 0;
+}
+
+
+.wpforms-field input, .wpforms-field textarea {
+  background: #ECFAFC !Important;
+  border-radius: 10px !important;
+  border: none !important;
+  padding: 20px !important;
+}
+.wpforms-submit-container {
+  text-align: center !Important;
+}
+
+
+
+
+/*Desktop*/
+@media only screen and (min-width:600px)  {
+  hr {
+    margin: 10px auto !Important;
+  }
+  
+  .desktop-nomargin {
+    margin: 0 !important;
+  }
+  .desktop-nopadding {
+    padding: 0 !Important;
+  }
+  
+  .desktop-hide {
+    display: none;
+  }
+  .desktop-flex {
+    display: flex;
+  }
+  
+  /*Desktop Background*/
+  .bg-lightpink, .bg-lightblue {
+    height: 300px;
+    width: 200%;
+    position: absolute;
+    left: -60px !important;
+  }
+  .bg-lightpink.medical {
+    height: 420px;
+  }
+  .bg-lightpink.medical.home {
+    height: 460px !important;
+  }
+  .bg-lightpink.newsletter {
+    height: 320px;
+  }
+
+  h2.subheading {
+    padding: 80px 0 40px;
+  }
+}
+
+
+
+/*Mobile*/
+@media only screen and (max-width:600px)  {
+  hr {
+    /*width: 90%;*/
+    margin: 10px auto !Important;
+  }
+  .mobile-flex {
+    display: flex;
+  }
+
+  /*Background Mobile*/
+  .bg-lightpink {
+    background-color: #F5DFDD !important;
+    height: 400px;
+    width: 116%;
+    position: absolute;
+    left: -60px !important;
+  }
+  .bg-lightblue {
+    position: absolute;
+    height: 800px;
+    width: 116%;
+  }
+  .bg-lightpink.medical {
+    height: 310px;
+  }
+  .bg-lightpink.medical.home {
+    height: 340px;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+  .nopaddingmobile {
+    padding: 0;
+  }
+  .nomarginmobile, #nomarginmobile {
+    margin: 0;
+  }
+  
+  h2.subheading {
+    padding: 40px 0 40px;
+    font-size: 20px;
+  }
+  .blobmobile {
+    padding: 4px;
+  }
+}
+
+
+
+/*Header*/
+@media only screen and (min-width:600px)  {
+  .login-menu a {
+    color: #EF6C7F !important;
+    border: 2px solid #EF6C7F !important;
+    height: 50% !important;
+    border-radius: 16px;
+    padding: 0 28px !important;
+    margin: 0 0 0 20px;
+  }
+  #ast-desktop-header {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .ast-main-header-wrap.main-header-bar-wrap, 
+  .ast-primary-header-bar.ast-primary-header.main-header-bar.ast-builder-grid-row-container.site-header-focus-item {
+    background: transparent !Important;
+  }
+}
+@media only screen and (max-width:600px)  {
+  .ast-main-header-wrap.main-header-bar-wrap {
+    background: white;
+  }
+  .row.section1.home {
+    padding-top: 72px;
+  }
+  #ast-desktop-header, .ast-main-header-wrap.main-header-bar-wrap {
+    position: fixed !Important;
+    width: 100%;
+  }
+}
+
+/*Footer*/
+.copyright {
+  color: #999;
+}
+.content-footer p, .content-footer a, .copyright {
+  font-family: 'Poppins', sans-serif
+}
+.copyright-skpp a {
+  color: #666 !important;
+}
+.list-other, .list-company {
+  display: grid;
+}
+.list-company a, .list-other a {
+  color: black;
+}
+.list-socmed a {
+  margin: 0 4px;
+}
+.list-socmed img {
+  width: 40px;
+}
+.content-footer h3 {
+  /*font-size: 20px;*/
+  padding-bottom: 12px;
+  font-family: 'Poppins', sans-serif !Important;
+}
+hr.hr-footer {
+  background: #999;
+}
+@media only screen and (min-width:600px)  {
+  .content-footer {
+    display: flex;
+    /*padding: 60px 150px 30px;*/
+    padding: 20px 100px;
+  }
+  .img-footer {
+    height: 280px;
+    width: 100%;
+  }
+  .copyright p {
+    margin: 0 !important;
+  }
+  .copyright {
+    display: flex;
+    direction: rtl;
+    padding: 10px 80px 40px;
+    text-align: center;
+  }  
+  .list-socmed img {
+    width: 60px !Important;
+    padding-right: 16px !Important;
+  }
+  .copyright-skpp a {
+    padding-right: 20px;
+  }
+  .hr-footer {
+    width: 84%;
+  }
+  .footer-image {
+    padding: 40px 130px 0;
+  }
+  .content-footer h3 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width:600px) {
+  .content-footer {
+    padding: 20px 0;
+  }
+  .footer-socmed {
+    padding-top: 30px;
+  }
+  .img-footer {
+    height: 590px;
+    width: 100% !important;
+  }
+  .img-footer {
+    height: 100% !important;
+  }
+  .content-footer h3 {
+    font-size: 16px;
+  }
+  .copyright-skpp {
+    display: grid;
+    padding: 20px 0 40px;
+  }
+  .copyright {
+    text-align: left;
+    /*padding-bottom: 40px;*/
+  }
+  .copyright-allrights, .copyright-powered, .footer-address p {
+    font-size: 14px;
+  }
+  .container-footer {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
+
+
+/*Woocommerce*/
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active::before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  box-shadow: none;
+  bottom: 0 !important;
+  left: 0;
+  border-radius: 0;
+}
+ul.tabs.wc-tabs {
+  display: flex;
+}
+a.button.product_type_subscription.add_to_cart_button.ajax_add_to_cart {
+  font-weight: 700 !important;
+}
+#text-choosechampion {
+  margin: 0;
+}
+.elementor-1788 .elementor-element.elementor-element-a4f7f7c.elementor-wc-products ul.products li.product {
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%);
+}
+.elementor-1788 .elementor-element.elementor-element-a4f7f7c.elementor-wc-products ul.products li.product:hover, 
+.elementor-1788 .elementor-element.elementor-element-a4f7f7c.elementor-wc-products ul.products li.product:active {
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
+}
+.shop-price span.price {
+  font-size: 16px !Important;
+}
+.product-addtocart .quantity {
+  display: none !important;
+}
+.product-addtocart button.single_add_to_cart_button.button.alt {
+  margin: 0 !important;
+}
+h2.yikes-custom-woo-tab-title.yikes-custom-woo-tab-title-komposisi,
+h2.yikes-custom-woo-tab-title.yikes-custom-woo-tab-title-pemakaian {
+  display: none;
+}
+li#tab-title-komposisi, li#tab-title-pemakaian {
+  width: 500%;
+  text-align: center;
+}
+.woocommerce-tabs.wc-tabs-wrapper {
+  margin: 0 !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active:before {
+  background: #76E5E0 !IMPORTANT;
+}
+/*Woocommerce Desktop*/
+@media only screen and (min-width:600px)  {
+  .shop-price span.price {
+    position: relative;
+    top: -28px;
+    float: right;
+  }
+  .shop-price a.button.product_type_subscription.add_to_cart_button.ajax_add_to_cart {
+    margin: 30px 0 !important;
+    float: right;
+  }
+  .pilih-paket label {
+    font-family: 'Montserrat';
+    font-size: 20px;
+  }
+  img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    width: 100%;
+    height: 328px !important;
+    padding-bottom: 20px;
+  }
+  .ast-woo-shop-product-description {
+    padding: 10px 0;
+    font-family: 'Overpass';
+    height: 120px;
+  }
+  div#icon-click {
+    display: none !Important;
+  }
+  .elementor.elementor-1788 {
+    background: url(https://getfanita.com/wp-content/themes/astra/assets/images/bg-shop.png);
+  }
+  #chooosechampion {
+    padding: 0;
+  }
+}
+/*Woocommerce Mobile*/
+@media only screen and (max-width:600px)  {
+  #chooosechampion {
+    padding: 10px !Important;
+  }
+  #text-choosechampion {
+    font-size: 20px !Important;
+  }
+  .shop-price span.price {
+    position: relative;
+    top: -138px !Important;
+    float: right;
+  }
+  .shop-price li.ast-article-single.product {
+    height: 260px;
+  }
+  .shop-price img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    top: 110px;
+  }
+  .shop-price a.button.product_type_subscription.add_to_cart_button.ajax_add_to_cart {
+    margin: 20px 0 !IMPORTANT;
+  }
+  .ast-woo-shop-product-description {
+    text-overflow: ellipsis;
+    line-height: 1.8em;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    top: -130px;
+  }
+}
+
+
+/*Home Page*/
+/*Home Page Desktop*/
+@media only screen and (min-width:600px)  {
+  .bg-banner-mobile {
+    display: none !important;
+  }
+  h1.text-banner {
+    font-size: 44px;
+    padding: 120px 0px 0 90px;
+  }
+  .img-banner {
+    padding: 60px;
+  }
+  button.button-primary.section1 {
+    margin: 60px 96px 120px;
+    padding: 20px 100px;
+  }
+  .btn-accordion img {
+    width: 80%;
+    padding: 1px;
+  }
+  img.icon-banner {
+    width: 160px;
+    height: 160px;
+    padding: 20px;
+  }
+  .section2 {
+    padding: 40px 200px;
+  }
+  .text-section3 {
+    /*padding: 100px 100px 100px 0px;*/
+    /*padding: 100px 80px 100px 40px;*/
+  }
+  .text-section3.misikami {
+    padding: 100px 140px 100px 40px !Important;      
+  }
+  img.img-tentangkami.mobile {
+    /*padding: 0px 60px;*/
+    /*padding: 40px 120px;*/
+    margin-top: -100px;
+  }
+  .img-mission {
+    /*padding: 50px 70px;*/
+    padding: 50px 70px 0 160px;
+  }
+  .content-tentangkami {
+    padding: 40px;
+  }
+}
+/*Home Page Mobile*/
+@media only screen and (max-width:600px)  {
+  .bg-banner-dekstop {
+    display: none !important;
+  }
+  h1.text-banner {
+    font-size: 16px;
+    padding: 40px 20px;
+    width: 100%;
+  }
+  button.button-primary.section1 {
+    margin: 8px auto 40px;
+    padding: 12px 48px;
+  }
+  img.img-banner.mobile {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    /*width: 50%;*/
+  }
+  .section2 {
+    padding: 36px;
+  }
+  .section-medis {
+    padding: 0 36px 26px;
+  }
+  img.icon-banner {
+    padding: 12px;
+  }
+  .text-section3 {
+    padding: 20px;
+  }
+  img.img-tentangkami.mobile {
+    position: absolute;
+    top: 30%;
+  }
+  .btn-section2 {
+    display: none;
+  }
+  .img-timmedis {
+    width: 50%;
+  }
+}
+
+
+/*Landing Page - Birth Control*/
+/*Birth Control Banner*/
+.bc-banner {
+  margin: auto;
+}
+.img-pilkb {
+  width: 100% !Important;
+}
+/*Doctor Section*/
+.quote-doct {
+  font-size: 16px;
+  /*font-style: italic;*/
+}
+.img-doct {
+  width: 100%;
+}
+.img-timmedis {
+  border-radius: 50%;
+  object-fit: cover;
+}
+/*img.icon-banner, */
+.img-doct {
+  border-radius: 50%;
+}
+
+/*Cara Kerja*/
+.title-carakerja {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+/*Birth Control Desktop*/
+@media only screen and (min-width:600px)  {
+  /*Banner LP Birth Control Desktop*/
+  .title-bannerlpdesktop {
+    font-size: 24px;
+    padding: 20px 40px;
+  }
+  .img-iconbannerlp img {
+    width: 60% !Important;
+    height: auto !Important;
+  }
+  .img-bannerlpdesktop {
+    padding: 0;
+  }
+  .img-bannerlpdesktop img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .bannerlp-desktop {
+    display: flex;
+  }
+  img.img-bannerlpmobile {
+    display: none;
+  }
+  .img-iconbannerlp p {
+    margin: 0;
+  }
+  p.text-bannerlp {
+    padding: 50px 100px 20px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat';
+  }
+  .bc-banner {
+    padding: 100px 0;
+  }
+
+  .bc-section2 {
+    padding: 60px 200px;
+  }
+  h2.subheading.center.bc-section2 {
+    padding-top: 120px;
+  }
+
+  /*Section Doct Birth Control Desktop*/
+  .sectiondoct {
+    /*padding: 70px 120px;*/
+    padding: 50px 120px 00px;
+  }
+  .sectiondoct.aboutus {
+    padding: 70px 120px;
+  }
+  .text-doct {
+    padding: 20px;
+  }
+  .name-doct {
+    padding-bottom: 20px;
+  }
+
+  /*Section Why Fanita - Birth Control Desktop*/
+  .sectionwhyfanita {
+    /*margin: auto;*/
+    padding: 40px 20px 0;
+  }
+  .bg-whyfanita {
+    height: 643px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .groupwhyfanita {
+    padding: 0 120px;
+    display: flex;
+    text-align: center;
+    padding: 0 160px;
+  }
+  .titlewhyfanita {
+    height: 130px;
+    padding: 36px 0 30px;
+  }
+  .img-whyfanita {
+    width: 30%;
+  }
+  .text-produkterbaik {
+    padding: 60px 0;
+  }
+
+  /*Cara Kerja - Birth Control Desktop*/
+  .img-arrowright {
+    margin: auto;
+    display: block;
+    top: 50%;
+    right: 50%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .img-arrowleft {
+    margin: auto;
+    display: block;
+    top: 50%;
+    right: 50%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .whatwedo, .nextstep {
+    padding: 40px 100px;
+    display: flex;
+  }
+  .partwhatwedo {
+    padding: 0 30px;
+  }
+  .icon-whatwedo {
+    width: 40%;
+  }
+
+  .pilkbcontent {
+    padding: 0 60px;
+  }
+  .bg-lightpink.lp {
+    left: -250px !important;
+    height: 270px;
+  }
+}
+
+/*Birth Control Mobile*/
+@media only screen and (max-width:600px)  {
+  /*Banner Birth Control Mobile*/
+  .text-bcbanner {
+    padding: 40px 20px;
+    font-size: 20px;
+  }
+  img.img-bannerlpmobile {
+    opacity: 0.5;
+    height: 160px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+  }
+  h2.text-right.title-bannerlpmobile {
+    position: absolute;
+    /*top: 100px;*/
+    top: 80px;
+    right: 0;
+    padding: 20px 20px 20px 200px;
+    font-size: 20px;
+  }
+  .img-iconbannerlp {
+    padding: 0px 10px 10px;
+  }
+  .img-iconbannerlp img {
+    padding: 20px;
+  }
+  p.text-bannerlp {
+    padding: 20px 20px 0;
+    text-align: center;
+  }
+  .bg-lightpink.lp {
+    height: 270px;
+  }
+  .img-iconbannerlp p {
+    margin: 0;
+  }
+  img.bg-banner-mobile.bg-sectiondoct.birth-control {
+    height: 300px !important;
+  }
+
+  /*Cara Kerja - Birth Control Mobile*/
+  .title-carakerja {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .img-arrowright {
+    margin: auto;
+    display: block;
+    right: 50%;
+    top: 90%;
+    width: 70%;
+  }
+  .img-arrowleft {
+    margin: auto;
+    display: block;
+    width: 70%;
+    left: 80%;
+    top: 80%;
+  }
+  .whatwedo {
+    padding: 0 40px;
+  }
+  img.icon-whatwedo {
+    width: 30%;
+  }
+  .step-hiw {
+    padding: 10px 36px;
+  }
+  .bc-section2.title-hiw {
+    padding-bottom: 20px;
+  }
+
+  /*Section Doct - Birth Control Mobile*/
+  .sectiondoct {
+    padding: 16px 20px 60px;
+    transform: translateY(10%);
+  }
+  .bg-sectiondoct {
+    width: 100%;
+    height: 240px;
+  }
+  .name-doct {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+  .quote-doct {
+    font-size: 16px;
+    /*font-style: italic;*/
+  }
+  img.img-doct {
+    padding: 20px 0 20px 10px;
+  }
+  .text-doct {
+    padding: 0px 20px 0 10px;
+  }
+  .containerpp {
+    padding: 30px;
+  }
+
+  /*Why Fanita - Birth Control Mobile*/
+  .sectionwhyfanita {
+    display: flex;
+  }
+  .title-whyfanita {
+    padding-top: 40px;
+  }
+  .row.sectionfaqkb {
+    background: #ECFAFC !important;
+    /*background: white;*/
+  }
+}
+
+
+/*FAQ*/
+.question-faq {
+  margin: auto;
+  padding: 10px 0;
+  text-align: left;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+.answer-faq {
+  margin: 10px 0;
+  text-align: left;
+}
+.faq {
+  padding-bottom: 60px;
+}
+/*FAQ Desktop*/
+@media only screen and (min-width:600px)  {
+  .faq {
+    padding: 0 300px 100px;
+  }
+  .sectionfaq {
+    padding-top: 44px;
+  }
+  h4.question-faq.qoneline {
+    position: relative;
+    top: 12px;
+  }
+  .paddingfaqhome {
+    padding-top: 40px; 
+  }
+  .row.sectionfaqkb {
+    background: #eefafc;
+  }
+  .btn-accordion img {
+    /*padding: 16px 0 0 0;*/
+    padding: 16px 0 16px 0;
+  }
+}
+/*FAQ Mobile*/
+@media only screen and (max-width:600px)  {
+  .img-accordion {
+    /*width: 100%;*/
+    /*float: right;*/
+  }
+  .btn-accordion {
+    padding: 0;
+  }
+  .btn-accordion img {
+    padding: 15px 0 16px 24px;
+  }  
+  .question-faq {
+    font-size: 16px;
+  }
+  #question1 h4.question-faq {
+    top: 12px;
+    position: relative;
+  }
+}
+
+
+/*Reviews*/
+span.dashicons.dashicons-star-filled {
+  color: #FDD671;
+}
+p.stars {
+  margin: 0;
+}
+.comment-text p {
+  margin-bottom: 10px;
+}
+/*Review Desktop*/
+@media only screen and (min-width:600px)  {
+  ol.commentlist {
+    list-style: none;
+    display: flex;
+    margin: 40px 0;
+  }
+  img.avatar.photo {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
+  }
+  .reviewsection {
+    margin: 0 60px;
+  }
+}
+/*Review Mobile*/
+@media only screen and (max-width:600px)  {
+  ol.commentlist {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+  img.avatar.photo {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    margin: 0 20px;
+  }
+  .review-mobile {
+    padding-top: 50px;
+  }
+}
+
+
+/*About Us*/
+.title-aboutus {
+  font-size: 20px;
+  padding: 20px;
+}
+.section-medis p {
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+/*About Us Desktop*/
+@media only screen and (min-width:600px)  {
+  h1.text-banner.about-us {
+    padding: 120px 0px 180px 120px;
+  }
+  .banner-jurnalperempuan {
+    padding: 80px 140px;
+    display: flex;
+  }
+  .text-bannerjp {
+    padding: 20px 40px;
+  }
+  .banner-aboutus {
+    padding-bottom: 160px;
+  }
+}
+/*About Us Mobile*/
+@media only screen and (max-width:600px)  {
+  .img-mission {
+    display: none;
+  }
+  .img-timmedis {
+    height: 120px;
+    width: 120px;
+  }
+  .quotes-aboutus {
+    width: 100%;
+    height: 250px;
+  }
+  h1.text-banner.about-us {
+    width: 100%;
+  }
+  .banner-aboutus {
+    display: flex;
+  }
+  img.bg-banner-mobile.aboutus {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+
+/*Blog Page*/
+a.category-blog, .cat-post a {
+  color: black;
+  padding: 8px 24px;
+  background: #ECFAFC;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 3px 4px 0px rgb(0 0 0 / 4%);
+}
+.cat-post a {
+  margin: 0;
+  font-size: 14px;
+}
+.list-blogcategory {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.list-blogcategory::-webkit-scrollbar {
+  display: none;
+}
+.first-blogpopular {
+  margin: 30px 0;
+  border-radius: 20px;
+  background: white;
+  padding: 0;
+  /*box-shadow: 2px 3px 4px 0px rgb(0 0 0 / 4%);*/
+  box-shadow: 0 1px 20px 0 rgb(0 0 0 / 8%), 0 4px 10px 0 rgb(0 0 0 / 10%);
+}
+h3.title-post-first, h4.title-post {
+  padding: 20px 0;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+.post-text {
+  padding: 30px;
+}
+.btn-linkpost {
+  margin: 30px 0 8px;
+}
+.blog-card {
+  border-radius: 20px;
+  background: white;
+  /*box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);*/
+  box-shadow: 0 1px 20px 0 rgb(0 0 0 / 8%), 0 4px 10px 0 rgb(0 0 0 / 10%);
+}
+.blog-date {
+  padding: 4px 0;
+}
+.blog-smallthumb img {
+  border-radius: 20px 20px 0 0;
+}
+.containersmallblog {
+  display: flex;
+}
+@media only screen and (min-width:600px)  {
+  .container-blog {
+    padding: 60px;
+  }
+  .container-blog, .container-category, .container-article {
+    padding-top: 100px !Important;
+  }
+  h1.title-blog {
+    text-align: center;
+  }
+  .first-blogpopular {
+    display: flex;
+  }
+  .first-popularthumb img {
+    border-radius: 20px 0 0 20px;
+    height: 440px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .blog-card {
+    max-width: 30.7%;
+  }
+  .btn-linkpost {
+    position: absolute;
+    width: 80%;
+    bottom: 30px;
+  }
+  .excerpt-post {
+    padding-bottom: 80px;
+  }
+  .bg-blog {
+    height: auto;
+    width: 100%;
+  }
+  .list-blogcategory {
+    padding: 20px 0 60px;
+  }
+}
+@media only screen and (max-width:600px)  {
+  .first-popularthumb img {
+    border-radius: 20px 20px 0 0;
+  }  
+  h3.title-post-first, h4.title-post {
+    font-size: 20px !important;
+  }
+  h1.title-blog {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .container-blog {
+    width: 105%;
+    left: -8px;
+    position: relative;
+    padding: 10px;
+  }
+  .list-blogcategory {
+    padding: 20px 20px 60px;
+  }
+  .container-blog {
+    background: white;
+  }
+}
+
+
+/*Blog Category Page*/
+@media only screen and (min-width:600px)  {
+  .container-category {
+    padding: 40px 150px;
+  }
+  .bc-category {
+    /*padding: 20px 0;*/
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width:600px)  {
+  .container-category {
+    padding: 20px;
+  }
+  .container-category .title-blog {
+    padding: 30px 10px 10px !important;
+  }
+}
+
+
+/*Blog Detail Page*/
+.blogdetail-authorimg {
+  border-radius: 50%;
+}
+.author-name {
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+@media only screen and (min-width:600px)  {
+  .container-article .entry-content {
+    padding: 40px 360px; 
+  }
+  .breadcrumb-category {
+    padding: 20px 80px;
+    font-size: 20px;
+  }
+  .title-blogdetail {
+    font-size: 50px !Important;
+  }
+  .blog-author {
+    padding: 12px 20px;
+  }
+  .firstblog {
+    padding-right: 20px !Important;
+  }
+  .container-blog .group-post {
+    padding-left: 30px;
+  }
+}
+@media only screen and (max-width:600px)  {
+  .container-article .entry-content, .breadcrumb-category {
+    padding: 20px; 
+  }
+  .blog-author {
+    padding: 0 12px;
+  }
+}
+
+
+/*Contact Us*/
+.btn-contactus {
+  padding: 16px 100px !important;
+}
+.list-socmedcu a {
+  padding: 12px;
+}
+.wpcf7 input:not([type=submit]), .wpcf7 select, .wpcf7 textarea {
+  background: #ECFAFC;
+  border-radius: 10px;
+  border: none !important;
+  padding: 20px !important;
+}
+/*Contact Us Desktop*/
+@media only screen and (min-width:600px)  {
+  /*Contact Us Form New*/
+  .name-cu {
+    width: 98% !Important;
+  }
+  .email-cu {
+    width: 98% !Important;
+    left: 2% !important;
+    position: relative !important;
+  }
+}
+/*Contact Us Mobile*/
+@media only screen and (max-width:600px)  {
+  .contact-email {
+    width: 100% !important;
+    margin: 0 !Important;
+  }
+  .contact-name {
+    width: 100% !important;
+  }
+  .btn-contactus, .btn-cu, .btn-eval {
+    width: 100% !important;
+  }
+  .container-contactus {
+    padding: 20px;
+  }
+  .ol-sk {
+    margin: 0 20px;
+  }
+}
+
+/*Thank you*/
+h2.subheading-newsletter.center {
+  padding: 40px 0 20px;
+}
+.ajax-loader {
+  display: none !Important;
+}
+.email-newsletter {
+  background: white !Important;
+  border-radius: 10px 0 0 10px !Important;
+}
+.text-bannerty {
+  padding: 20px;
+}
+.text-bannerty h4 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+.banner-ty img {
+  width: 100%;
+}
+.tea img {
+  width: 80%;
+  padding: 30px;
+}
+/*Thank you Desktop*/
+@media only screen and (min-width:600px)  {
+  .banner-ty {
+    padding: 30px 20px 30px 0;
+  }
+  .text-bannerty {
+    padding: 36px 0 !important;
+  }
+  .title-nextstep {
+    padding: 24px;
+  }
+  .tea img {
+    padding-top: 80px !Important;
+  }
+  .container-fluid.hero-thank-you.text-center.d-flex.justify-content-center {
+    margin-top: 80px;
+  }
+}
+/*Thank you Mobile*/
+@media only screen and (max-width:600px)  {
+  .banner-ty {
+    padding: 20px 20px 0;
+  }
+  .text-bannerty h4 {
+    font-size: 16px !important;
+  }
+  .text-bannerty {
+    padding: 4px !important;
+  }
+  .bg-tymobile {
+    height: 110px;
+  }
+  .banner-ty img {
+    width: 100%;
+    top: -16px;
+    position: relative;
+  }
+  .title-nextstep {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .banner-jurnalperempuan {
+    padding: 60px 30px;
+  }
+  .banner-jurnalperempuan img {
+    padding-bottom: 40px;
+  }
+  .bg-lightpink.newsletter {
+    height: 340px;
+  }
+  .container-fluid.hero-thank-you.text-center.d-flex.justify-content-center {
+    margin-top: 80px;
+  }
+}
+
+
+/*Evaluasi Medis*/
+/*Question*/
+.question-passed{
+  height: 20px;
+  width: 8%;
+  background-color: #DAF4F8;
+  border-radius: 10px;
+}
+.question-notpassed, .q-progress {
+  height: 20px;
+  width: 8%;
+  background-color: #F5F5F5;
+  border-radius: 10px;  
+}
+/*Button Evaluasi Medis*/
+.btn-evaluasimedis {
+  background: #DAF4F8 !Important;
+  color: black;
+  margin: 10px auto 40px !Important;
+  padding: 12px 40px;
+}
+.btn-evaluasimedis:hover, .btn-evaluasimedis:active, .btn-evaluasimedis:focus, .btn-evaluasimedis:visited {
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
+  background: #DAF4F8 !Important;
+  color: black;
+}
+.btn-eval {
+  display: grid;
+  width: 100%;
+  padding: 12px 100px !important;
+}
+.btn-evalback {
+  margin-right: 10px;
+}
+input[type=radio] {
+  visibility: hidden;
+  display: none;
+}
+.input-radio {
+  padding: 12px;
+  width: 100%;
+  background: #ECFAFC;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.input-radio:hover {
+  cursor: pointer;
+}
+input[type="radio"]:checked + label {
+  outline: none;
+  background: #B4EBE8 !Important;
+}
+.evaluasimedis .field {
+  background: #ECFAFC !Important;
+  border-radius: 10px;
+  border: none !important;
+  padding: 20px;
+  width: 100%;
+}
+.email-eval img {
+  width: 80%;
+}
+.ic-email {
+  padding: 9px 18px;
+  background: #DAF4F8 !important;
+  border-radius: 10px 0 0 10px !important;
+  box-shadow: none !important;
+}
+.input-emaileval {
+  background: #ECFAFC !Important;
+  border-radius: 0 10px 10px 0 !important; 
+  border: none !important;
+  padding: 20px !important;
+}
+#save-sorrycant[disabled], #save-sorryman[disabled] {
+  font-size: 20px !important;
+  color: grey !important;
+}
+input.form-control.form-cta.evaluasimedis-email {
+  border: 1px solid #76e5e0;
+  padding: 20px;
+}
+.evaluasimedis-sk.center {
+  padding-top: 20px;
+}
+.doctor-recommended img {
+  padding: 0 10px;
+}
+/*Evaluasi Medis Desktop*/
+@media only screen and (min-width:600px)  {
+  .evaluasimedis {
+    padding: 0px 400px;
+  } 
+  .btn-evalback, .btn-evalnext {
+    padding: 12px !important;
+  }
+  .btn-evalnext {
+    max-width: 73%;
+  }
+  .width-question {
+    width: 596px !important;
+  }
+  .img-em-email {
+    width: 60%;
+  }
+  .evaluasimedis-sk a {
+    color: #999 !important;
+    padding: 10px;
+  }
+  .doctor-recommended {
+    padding-top: 20px;
+  }
+  .img-dr {
+    width: 16%;
+  }
+  .img-pg {
+    width: 28%;
+  }
+  a#save-name {
+    max-width: none;
+  }
+  h1#title-evalmedis {
+    padding-top: 100px;
+  }
+  .btn-evaluasimedis {
+    margin: 10px auto 60px !important;
+    padding: 12px 40px;
+  }
+  .containerpp {
+    padding: 60px 200px;
+  }
+  .section-medis {
+    padding-bottom: 80px;
+  }
+  .misikamisection {
+    padding: 0 96px;
+  }
+}
+/*Evaluasi Medis Mobile*/
+@media only screen and (max-width:600px)  {
+  .evaluasimedis {
+    padding: 0 30px;
+  }   
+  .btn-evalback {
+    padding: 12px 32px !important;
+  }
+  .btn-evalnext {
+    padding: 12px 60px !important;
+  }
+  .img-em-email {
+    width: 60%;
+  }
+  .evaluasimedis-sk a {
+    color: #999 !important;
+    padding: 4px;
+  }
+  .doctor-recommended {
+    padding-top: 40px;
+  }
+  .img-dr {
+    width: 20%
+  }
+  .img-pg {
+    width: 40%
+  }
+  button#save-email {
+    padding: 0 30px;
+  }
+}
+
+
+/*REDESIGN GETFANITA.COM*/
+/*Buttons*/
+:root {
+  --primary-primary-100: #EF6C7f;
+  --primary-primary-120: #BF5767;
+  --black-black-50: #666666;
+}
+.btn-newprimary {
+  width: 282px;
+  height: 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 16px 32px;
+  border-radius: 24px;
+  background-color: var(--primary-primary-100);
+}
+.btn-newprimary:hover {
+  width: 282px;
+  height: 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 16px 32px;
+  border-radius: 24px;
+  background-color: var(--primary-primary-120);
+}
+
+.Section-Title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+}
+.Heading {
+  flex-grow: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.44;
+}
+.Description {
+  font-size: 16px;
+  font-weight: 300;
+}
+.Headline {
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--primary-primary-100);
+}
+.Section-Title, .Heading, .Description, .fanita-didirikan, .dr-Ida-Ayu-Narayani, .Tim-Medis-Fanita-Health, .text-kontrasepsi h1 , .new-question-faq {
+  font-stretch: normal;
+  font-style: normal;
+}
+.Description, .Heading, .fanita-didirikan, .dr-Ida-Ayu-Narayani, .Tim-Medis-Fanita-Health, .text-kontrasepsi h1, .new-question-faq  {
+  text-align: left;
+}
+.newpilkb-bannerleft, .container-pilkbicon h3, .fanita-untuk-asia-tenggara, .Section-Title, .Heading, 
+.fanita-didirikan, .dr-Ida-Ayu-Narayani, .text-kontrasepsi h1, .new-question-faq, .Isi-Evaluasi-Medis, .Headline,
+.featured-title, .pilkbdesc-title, .Pelajari-Lebih-Lanjut {
+  font-family: 'Poppins' !Important;
+}
+.Tim-Medis-Fanita-Health, .Description, .newpilkb-groupicon p, .pildesc-desc {
+  font-family: 'Be Vietnam';
+}
+.fanita-untuk-asia-tenggara, .Tim-Medis-Fanita-Health, .Description, .fanita-didirikan {
+  line-height: 1.5;
+}
+.fanita-untuk-asia-tenggara, .Tim-Medis-Fanita-Health, .Description, .Heading, .new-question-faq {
+  letter-spacing: 0.1px;
+}
+.dr-Ida-Ayu-Narayani, .fanita-didirikan, .Section-Title {
+  letter-spacing: 0.2px;
+}
+.fanita-untuk-asia-tenggara, .Tim-Medis-Fanita-Health, .Description, .Heading, .Section-Title, .text-kontrasepsi h1, .dr-Ida-Ayu-Narayani, .fanita-didirikan, .new-question-faq {
+  color: var(--black-black-100);
+}
+
+
+/*New FAQ*/
+.new-question-faq {
+  font-weight: 500;
+  line-height: 1.44;
+}
+.new-btn-accordion {
+  padding: 0;
+}
+@media only screen and (min-width:600px)  {
+  .new-btn-accordion img {
+    width: 40%;
+    vertical-align: middle;
+    padding: 16px 0;
+    float: right;
+  }
+  .new-faq-question {
+    padding: 20px 0;
+  }
+  .new-faq-answer {
+    padding: 0 0 20px;
+  }
+  .img-accordion {
+    width: 80%;
+    float: right;
+  }
+  .new-question-faq {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width:600px)  {
+  .img-accordion {
+    width: 80%;
+    float: right;
+  }
+  .new-question-faq {
+    font-size: 16px;
+  }
+  .new-faq-question {
+    padding: 10px 0;
+  }
+  .new-faq-answer {
+    padding: 0px 0 10px;
+  }
+  .new-btn-accordion img {
+    float: right;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+/*New Birth Control Landing Page*/
+.steppilkb {
+  font-size: 18px;
+}
+
+.container-pilkbicon, .newpilkb-kontrasepsi {
+  border-radius: 24px;
+}
+.card-kenapafanita{
+  border-radius: 24px;
+  border: solid 2px var(--primary-primary-100);
+}
+.Isi-Evaluasi-Medis {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: var(--black-black-100);
+}
+.featured-title {
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: var(--black-black-50);
+}
+@media only screen and (min-width:600px)  {
+  .container-pilkbicon {
+    border-radius: 24px;
+    position: relative;
+    top: 100px;
+  }
+  .newpilkb-bannerleft {
+    margin-left: 140px;
+    margin-top: 260px;
+    max-width: 425px;
+  }
+  .newpilkb-bannerright {
+    margin-top: 110px;
+    margin-right: 100px;
+  }
+  .pink-bg-hero.newpilkb {
+    height: 910px;
+  }
+  .newpilkb-kontrasepsi {
+    top: 240px;
+  }
+  .container-kontrasepsi {
+    height: 800px;
+  }
+  .text-kontrasepsi {
+    padding: 80px 300px 80px 200px;
+    margin-right: 40px;
+    height: 400px;
+    top: 60px;
+  }
+  .text-pilkbdesc {
+    right: 220px;
+    border-radius: 24px;
+    padding: 50px;
+    margin: 60px 0;
+  }
+  .img-pilkbdesc {
+    padding: 0 80px 0 20px;
+  }
+  .text-drida {
+    padding: 40px;
+  }
+  .card-kenapafanita{
+    margin: 10px;
+    padding: 20px;
+    right: 30px;
+  }
+  .card-kenapafanita img {
+    width: 100px;
+  }
+  .img-pilkbdesc img {
+    height: 100%; 
+    width: 100%;
+  }
+  .newpilkb-titlebanner {
+    padding-bottom: 20px;
+  }
+  .Isi-Evaluasi-Medis {
+    padding: 8px;
+  }
+  .steppilkb p {
+    margin-bottom: 32px;
+  }
+  .newpilkb-kontrasepsi, .newpilkb-pilkbdesc, .newpilkb-carakerja, .newpilkb-whyfanita {
+    display: flex
+  }
+  .img-kontrasepsi.mobile-hide {
+    right: 300px;
+  }
+  .text-kontrasepsi h1 {
+    font-size: 48px;
+    line-height: 1.33;
+    letter-spacing: normal;
+    padding-bottom: 20px;
+    color: var(--primary-primary-100);
+  }
+  .title-carakerja {
+    padding-top: 40px;
+  }
+  .fanita-didirikan {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .dr-Ida-Ayu-Narayani {
+    flex-grow: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .Tim-Medis-Fanita-Health {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .fanita-untuk-asia-tenggara {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .container-whyfanita, .containerfaq {
+    padding-top: 40px;
+  }
+  .newpilkb-groupicon img {
+    width: 30%;
+  }
+  .Pelajari-Lebih-Lanjut {
+    font-weight: 500;
+    line-height: 1.44;
+    letter-spacing: 0.1px;
+  }
+}
+@media only screen and (max-width:600px)  {
+  .newpilkb-bannermobile {
+    padding-top: 40px;
+  }
+  .newpilkb-titlebanner {
+    font-size: 28px !Important;
+    padding-bottom: 20px;
+  }
+  .img-steppilkb {
+    margin: 8px 0;
+  }
+  .steppilkb p {
+    margin: 8px 0 14px;
+  }
+  .Isi-Evaluasi-Medis {
+    padding: 0;
+  }
+  .newpilkb-bannerleft .btn-newprimary {
+    margin: 20px auto 40px;
+  }
+  .newpilkb-groupicon {
+    padding: 0;
+    margin: 0;
+  }
+  .newpilkb-groupicon p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+  .newpilkb-groupicon h3 {
+    font-size: 16px;
+  }
+  .pink-bg-hero.newpilkb {
+    height: 720px;
+  }
+  .newpilkb-kontrasepsi, .newpilkb-pilkbdesc  {
+    top: 180px;
+  }
+  .container-kontrasepsi {
+    height: 620px;
+  }
+  .img-kontrasepsi.desktop-hide {
+    z-index: 10;
+  }
+  .text-kontrasepsi {
+    margin: auto;
+    padding: 140px 20px 10px;
+    border-radius: 24px;
+    bottom: 100px;
+  }
+  .text-kontrasepsi h1 {
+    font-size: 26px;
+    line-height: 1.38;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  .img-kontrasepsi.desktop-hide img {
+    width: 94%;
+  }
+  .container-pilkbdesc {
+    height: 820px;
+  }
+  .text-pilkbdesc{
+    margin: auto;
+    border-radius: 24px;
+    padding: 30px 20px 70px;
+    bottom: 20px;
+  }
+  .img-pilkbdesc img {
+    width: 96%;
+  }
+  .pilkbdesc-title {
+    font-size: 26px;
+    line-height: 1.38;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+  .pildesc-desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+  }
+  .Pelajari-Lebih-Lanjut {
+    font-size: 16px;
+    line-height: 1.44;
+    letter-spacing: 0.1px;
+    text-align: right;
+  }
+  .title-carakerja {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+  .container-carakerjamobile {
+    display: flex;
+  }
+  .newpilkb-carakerja p.Description, .newpilkb-whyfanita p.Description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    margin-bottom: 24px;
+  }
+  .stepcarakerja {
+    padding: 0 10px 0 10px;
+  }
+  .fanita-didirikan {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.44;
+    letter-spacing: 0.1px;
+    padding: 40px 0 0;
+  }
+  .dr-Ida-Ayu-Narayani {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .Tim-Medis-Fanita-Health {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .text-drida {
+    padding: 0 10px;
+  }
+  .img-dridamobile {
+    padding: 50px 0;
+  }
+  .fanita-untuk-asia-tenggara {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+  }
+  .title-whyfanita {
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+  .pointwhyfanitamobile {
+    padding: 20px 0px 0 12px;
+  }
+  .card-kenapafanita {
+    margin-bottom: 20px;
+  }
+  .newpilkb-groupicon img {
+    width: 60%;
+  }
+  .img-stepcarakerja {
+    padding: 0 10px;
+  }
+}
+
+
+/*penambahan css farhan*/
+
+/* halaman STI */
+
+/* hero-section STI */
+.pink-bg-hero {
+  background-color: #FDF0F2;
+}
+.backup-box-content-hero {
+  margin-left: 183px;margin-top: 270px;max-width: 425px;
+}
+.title-sti {
+  font-family: 'Poppins' !important;font-weight: bold !important;font-size: 48px;line-height: 1.25;
+}
+.sub-title-sti {
+  font-family: 'Be Vietnam', sans-serif;font-size:17px;font-weight: 100;
+}
+.mt-line-hero {
+  margin-top:130px;
+}
+.mt-sti-img {
+  margin-top: 110px;
+}
+.backup-form-hero-sti {
+  font-size:24px;font-family: poppins !important;margin-top:55px;
+}
+.sub-backup-form-hero-sti {
+  max-width: 605px;
+}
+.pink-text {
+  color: #EF6C7F; 
+}
+.lh-form-sti {
+  line-height: 1.6;
+}
+.form-hero-sti , .form-hero-sti:hover, .form-hero-sti:active  , .form-hero-sti:focus {
+  padding: 17.5px 20px;
+  outline: none;
+  box-shadow: none;
+  background: #fff !important;
+  border: 0px solid;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-family: poppins !important;
+}
+.form-hero-sti::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'be vietnam';
+}
+.btn-form-hero-sti , .btn-form-hero-sti:focus, .btn-form-hero-sti:active {
+  background: #EF6C7F;
+  font-family: poppins !important;
+  color:#fff;
+  outline: none;
+  box-shadow: none;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+/* hero-section STI */
+
+/* card section */
+.backup-card-section {
+  background-color: #F1FCFC;
+}
+.title-card-section {
+  font-size: 35px;max-width: 660px;line-height: 1.4;margin-bottom:24px;
+}
+.sub-title-card-section {
+  max-width:520px;line-height:1.6;
+}
+.mt-90-card {
+  margin-top:90px;
+}
+.mt-77-card {
+  margin-top:77px;
+}
+.card-ims {
+  border: none;border-radius: 24px;padding: 20px 18px;box-shadow: 0px 7px 16px 0px #CCCCCC26;
+}
+.card-ims-wp {
+  box-shadow: none;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  margin: 0;
+}
+.title-card-ims {
+  font-size: 30px;margin-top: 24px;margin-bottom:16px;
+}
+.sub-title-card-ims {
+  font-size: 16px;
+}
+.mt-77-card > a {
+  font-family:poppins;color:#000;
+}
+.mt-77-card > a:hover , .mt-77-card > a:focus {
+  text-decoration: none;
+  color:#EF6C7F;
+  transition: all 0.3s ease-in-out;
+}
+/* card section */
+
+/* CTA */
+.backup-cta-sti {
+  max-width: 575px;
+}
+.title-cta-sti {
+  font-size:30px;padding-top: 55px !important;margin-bottom:24px;
+}
+/* CTA */
+
+/* STEP */
+.sub-step-section {
+  padding: 0px 300px;
+}
+.fsz-30 {
+ font-size: 30px;
+}
+.fsz-16 {
+  font-size: 16px;
+}
+.fsz-18 {
+  font-size: 18px !important; 
+}
+.fsz-15 {
+  font-size: 15px !important; 
+}
+.number-step {
+  font-family: 'Poppins';
+  font-weight: bold;
+  margin-right: 25px;
+  color: #EF6C7F;
+  background: #FDE2E5;
+  padding: 1px 16px;
+  border-radius: 100%;
+  font-size: 24px;
+  width: 44px;
+  height: 43px;
+
+}
+.title-step {
+  font-family: 'Poppins';
+  font-size: 17.5px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  color: #EF6C7F;
+}
+/* STEP */
+
+/* TIM MEDIS SECTION */
+.mm-45 {
+  margin-top:-70px;
+}
+.mm-45 > span {
+  background: #fff;
+  font-family: 'Be Vietnam';
+  font-weight: bold;
+  padding: 13px 22px;
+  border-radius: 12px;
+}
+/* TIM MEDIS SECTION */
+
+/* Testimonial section */
+.slide-testi {
+  padding-bottom: 30px;
+}
+.cs-testi-mb {
+  margin-bottom: 30px;
+}
+.sub-slide-testi {
+  margin-bottom: 30px;
+}
+.backup-testimonial-card {
+  padding: 9px;
+}
+.testimonial-card {
+  border: 2px solid #F8B7BF;
+  padding: 30px;
+  position: relative;
+  background: #fff;
+  webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.testimonial-card:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #F8B7BF;
+  border-bottom: 10px solid transparent;
+  right: 45%;
+  bottom: -21px;
+}
+.testimonial-card:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  right: 45%;
+  bottom: -18px;
+}
+.content-testimonial {
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing:0.3px;
+  color: #000;
+  font-family: be vietnam;
+  text-align: center;
+  font-weight: 100;
+}
+.testi-person {
+  padding: 25px 0 0 25px;
+  position: relative;
+}
+.testi-person > img {
+  object-fit: cover;
+}
+.testi-person-detail {
+  padding: 15px 0 12px 0;
+}
+.slick-dots li.slick-active button:before {
+  color: #76E5E0 !important;
+}
+.slick-dots li button:before {
+  color: #cccc !important;
+  opacity: 1 !important;
+}
+/* Testimonial section */
+
+
+
+/* Halaman STI */
+/* media screen */
+@media (max-width:1025px) {
+  .mt-77-card > a {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width:770px) {
+  .backup-box-content-hero {
+    padding: 0px 15px;
+    margin-left: 0;
+    margin-top: 160px;
+  }
+  .sub-step-section {
+    padding :0px 150px;
+  }
+}
+
+@media (max-width:767px) {
+
+  /* navbar */
+  .navbar-light {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    background-color: #fff !important;
+  }
+  .navbar-nav {
+    margin-top:15px;
+    margin-bottom: 15px;
+  }
+  .navbar-brand {
+    margin-top: -8px;
+  }
+  .menu-list-item {
+    text-align: center;
+    margin-left: 0;
+    font-size: 16px !important;
+  }
+  .text-left-xs {
+    text-align: left !important;
+  }
+  .display-mt-footer {
+    margin-top: 60px !important;
+  }
+  .js-mobile-start {
+    justify-content: start !important;
+  }
+
+  /* hero-sti */
+  .backup-box-content-hero {
+    padding: 0px 15px;
+    margin-left: 0;
+    margin-top: 35px;
+  }
+  .set-mobile-hero-bg {
+    background-image: url(https://getfanita.com/wp-content/themes/astra/assets/images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .title-sti {
+    font-size: 31.5px;
+    line-height: 1.3;
+  }
+  .sub-title-sti {
+    font-size: 16px;
+  }
+  .center-text-xs {
+    text-align: center;
+  }
+  .mt-line-hero {
+    margin-top: 12px;
+    padding: 0px 30px;
+  }
+  .backup-form-hero-sti {
+    font-size: 18px;
+    padding: 0px 25px;
+    margin-top: 20px;
+  }
+  .form-hero-sti, .form-hero-sti:hover, .form-hero-sti:active, .form-hero-sti:focus {
+    padding:14px 20px;
+    font-size: 15px;
+  }
+  .mt-group-xs {
+    margin-top: 25px !important;
+  }
+  .img-xs-head {
+    width: 220px;
+    margin-top: -50px;
+  }
+
+  /* card section */
+  .xs-title-card-section {
+    font-size: 25px !important;
+  }
+
+  /* step section */
+  .sub-step-section {
+    padding: 0px 15px;
+  }
+  .number-step {
+    font-size: 18px;
+    padding:1px 12px;
+    height: 30px;
+  }
+
+  /* tim medis section */
+  .doctor-name-xs {
+    background: #fff;
+    font-family: 'Be Vietnam';
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+  .mm-45 {
+    margin-top: -56px;
+  }
+}
+
+@media (max-width:380px) {
+  .img-xs-head {
+    width: 180px;
+  }
+  .mm-45 {
+    margin-top: -52px;
+  }
+}
+@media (max-width:325px) {
+  .img-xs-head {
+    width: 95px;
+  }
+}
+
+/*halaman contact-us*/
+.backup-img-contact {
+  margin-top:75px;
+}
+.backup-form-contact {
+  padding-right:12rem;
+  padding-left:12rem;
+}
+.form-contact-page , .form-contact-page:hover, .form-contact-page:active  , .form-contact-page:focus {
+  padding: 16px 20px;
+  outline: none;
+  box-shadow: none;
+  background: #ECFAFC !important;
+  border: 0px solid;
+  border-radius: 15px;
+  font-family: overpass;
+  resize :none;
+}
+.form-contact-page::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'overpass';
+  font-style: italic;
+}
+.set-button-contact {
+  margin:0 !important;
+
+}
+@media (max-width:767px) {
+  .backup-form-contact {
+    padding-right:30px;
+    padding-left:30px;
+  }
+  .form-contact-page {
+    border-radius:10px;
+  }
+}
+
+
+/*halaman thank you*/
+
+.hero-thank-you {
+  padding: 35px 0px;
+  background-image: url(https://getfanita.com/wp-content/themes/astra/assets/images/bg-head-thankyou.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.thankyou-icon {
+  height: 140px;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-150 {
+  margin-top: 150px;
+}
+.icon-card-step {
+  width: 125px;
+  height: 125px;
+}
+.ct-cta {
+  padding:0px 275px;
+  margin-top: 45px;
+}
+.cta-section {
+  margin-top: 45px;
+  padding: 20px 0px;
+  background-color:#FDF0F2;
+}
+.form-cta , .form-cta:hover, .form-cta:active  , .form-cta:focus {
+  padding: 23px 20px;
+  outline: none;
+  box-shadow: none;
+  background: #fff !important;
+  border: 0px solid;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-family: overpass;
+}
+.form-cta::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'overpass';
+  font-style: italic;
+}
+.btn-form-cta , .btn-form-cta:hover .btn-form-cta:focus, .btn-form-cta:active {
+  background: #B4EBE8 !important;
+  font-family: mont;
+  font-weight: bold;
+  outline: none !important;
+  box-shadow: none !important;
+  border:none !important;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #000 !important;
+}
+
+
+
+@media (max-width:768px) {
+  .ct-cta {
+    padding:0px 30px !important;
+  }
+  .resize-text {
+    font-size:23px;
+    margin-bottom:10px;
+  }
+  .hero-thank-you {
+    background-image: url(https://getfanita.com/wp-content/themes/astra/assets/images/bg-head-mobile-thankyou.png);
+    padding: 0;
+    width: 100%;
+    height: 115px;   
+  }
+  .thankyou-icon {
+    height: 95px;
+    margin-top: 7px !important;
+  }
+  .form-cta {
+    padding:18px 20px !important;
+  }
+  .set-button-blog-thankyou {
+    padding:20px 100px !important;
+  }
+}
+
+/* halaman menstruasi - landingpage */
+.super-backup-card-mens {
+  padding:0px 40px;
+}
+.title-accordion-mens {
+  font-family: 'poppins';
+  font-size: 17.5px;
+  margin-bottom:24px;
+}
+.border-sub-accordion {
+  border-bottom:0.5px solid #CCCCCC;
+  margin-bottom: 29px;
+}
+@media (max-width:767px) {
+  .img-xs-mens {
+    width: 260px;
+    margin-top: -50px;
+  }
+  .super-backup-card-mens {
+    padding:0px 0;
+  }
+}
+@media (max-width:380px) {
+  .img-xs-mens {
+     width: 220px;
+  }
+}
+ @media (max-width:350px) {
+  .img-xs-mens {
+    width: 180px;
+  }
+}
+/* halaman menstruasi - landingpage */
+
+
+/* halaman menopause - landingpage */
+.pt-72-title-menopause {
+  padding-top:72px;
+}
+.mt-110-menopause {
+  margin-top:110px;
+}
+.img-card-menopause {
+  text-align:center;margin-top:45px;
+}
+.title-card-menopause {
+  font-size:43px;
+}
+.cs-grid-menopause {
+  width: 20% !important;
+  padding:0px 30px;
+}
+
+@media (max-width:767px) {
+  .centering-xs-text {
+    text-align: center !important;
+  }
+}
+@media (max-width:768px) {
+  .img-xs-menopause {
+    width: 185px;
+    margin-top: -50px;
+  }
+  .img-model-menopause {
+    display: none;
+  }
+  .h-50-xs {
+    height: 15% !important; 
+  }
+  .mt-110-menopause {
+    margin-top:35px;
+  }
+  .img-card-menopause {
+    margin-top:0px;
+  }
+  .mt-xs-0-menopause {
+    margin-top: 10px;
+    font-size: 22px !important;
+  }
+  .cs-grid-menopause {
+    webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding:0px 10px;
+  }
+  .xs-signs-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .xs-content-signs {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:380px) {
+  .img-xs-menopause {
+     width: 155px;
+  }
+}
+ @media (max-width:350px) {
+  .img-xs-menopause {
+    width: 135px;
+  }
+}
+
+/* halaman menopause - landingpage */
+
+/* halaman new about us - landingpage */
+.box-hero-about-new {
+  max-width:450px;margin-left:150px;
+}
+.backup-content-about-new {
+  padding-top:110px;padding-bottom:54px;
+}
+.bg-blue-hero {
+  background: #F1FCFC;
+}
+.set-card-new {
+  border:2px solid #EF6C7F !important;
+  padding: 12px;
+  box-shadow: none;
+}
+.title-new-about {
+  font-size: 24px;
+  line-height: 1.5;
+}
+.title-card-new-about {
+  margin-top:48px;margin-bottom:48px;
+}
+.cta-new-section {
+  margin-top:72px;margin-bottom:72px;border-radius:36px;
+}
+.backup-cta-new-section {
+  max-width:720px;
+}
+.backup-btn-new-mods {
+  margin-top:50px;
+}
+.btn-new-mods {
+  background: #EF6C7F;
+  color: #fff !important;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px 45px;
+  border-radius: 24px;
+}
+
+@media (max-width:770px) {
+  .box-hero-about-new {
+    padding: 0px 15px;
+    margin-left: 0;
+  }
+}
+@media (max-width:767px) {
+  .box-hero-about-new {
+    padding: 0px 15px;
+    margin-left: 0;
+  }
+  .set-mobile-new {
+    background-image: url(../../../wp-content/themes/astra/assets/images/mobile-bg-new.svg);
+    background-size: cover;
+  }
+  .xs-blue-bg {
+    background-color: #F1FCFC;
+    padding-bottom: 42px;
+  }
+  .img-role-xs {
+    padding:10px;
+  }
+  .set-pad-xs-about-new {
+    padding:0px 15px;
+  }
+  .xs-d-flex {
+    display: flex;
+  }
+  .xs-d-block {
+    display: block;
+    margin-left: 17px;
+  }
+  .set-card-new {
+    padding:0;
+  }
+  .title-new-about {
+    font-size: 16px !important;
+  }
+  .img-xs-card-about {
+    width: 500px;
+    margin-top: 5px;
+  }
+  .cta-new-section {
+    margin-top: 54px;
+    margin-bottom: 54px;
+    padding: 0px 15px;
+  }
+  .set-pad-new-cta {
+    padding:0px 24px !important;
+  }
+}
+
+/* halaman new about us - landingpage */
+
+/* halaman new contact us - landingpage */
+.sub-backup-new-form-contact {
+  margin-bottom: 24px;
+}
+.label-form-new-contact {
+  font-family: 'Be Vietnam';
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.custom-form-new-contact {
+  border-radius: 20px;
+  padding: 12.5px 20px !important;
+  resize: none;
+}
+.custom-form-new-contact::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'be vietnam';
+  font-style: normal !important;
+}
+.backup-medsos-new {
+  margin-top:80px;margin-bottom:40px;
+}
+.title-new-medsos {
+  margin-bottom: 18px;
+  font-size: 26px;
+  font-family: 'Poppins' !important;
+  font-weight: bold !important;
+  color: #000;
+}
+
+@media (max-width:767px) {
+  .set-mb-bg-contact {
+    background-color: #FDF0F2;
+  }
+  .set-xs-btn-contact {
+    padding:15px 60px;
+    font-size: 16px;
+  }
+  .backup-medsos-new {
+    margin-top: 40px;
+  }
+}
+
+/* halaman new contact us - landingpage */
